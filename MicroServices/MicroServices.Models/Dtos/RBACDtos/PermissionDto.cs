@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MricoServices.Models.Dtos
+namespace MicroServices.Models.Dtos.RBACDtos
 {
     /// <summary>
     /// 权限列表 DTO

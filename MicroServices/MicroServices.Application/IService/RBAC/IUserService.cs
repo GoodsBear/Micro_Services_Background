@@ -1,15 +1,15 @@
 ﻿using MricoServices.Shared.ApiResult;
-using MricoServices.Models.Dtos;
+using MicroServices.Models.Dtos.RBACDtos;
 
 namespace MricoServices.Application.IService.RBAC
 {
     
     public interface IUserService 
     {
-        ///// <summary>
-        ///// 验证用户登录信息
-        ///// </summary>
-        //Task<ApiResult<UserDto>> AuthenticateUserAsync(string username, string password);
+        /// <summary>
+        /// 验证用户登录信息
+        /// </summary>
+        Task<ApiResult> AuthenticateUserAsync(UserLoginDto userLoginDto);
 
         ///// <summary>
         ///// 通过Id查用户

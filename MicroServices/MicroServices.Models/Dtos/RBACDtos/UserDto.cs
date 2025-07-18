@@ -8,8 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MricoServices.Models.Dtos
+namespace MicroServices.Models.Dtos.RBACDtos
 {
+    /// <summary>
+    /// 用户登录后的JWT
+    /// </summary>
+    public class TokenDto : UserDto
+    {
+        public string Token { get; set; }
+    }
+
     /// <summary>
     /// 用户信息Dto
     /// </summary>
@@ -29,6 +37,9 @@ namespace MricoServices.Models.Dtos
 
         [SugarColumn(ColumnDescription = "最后登录时间", IsNullable = true)]
         public DateTime? LastLoginAt { get; set; }
+
+        [SugarColumn(ColumnDescription = "用户角色ID列表", IsNullable = true, IsIgnore = true)] 
+        public List<int>RoleId { get; set; }
     }
     /// <summary>
     /// 用户创建或更新Dto

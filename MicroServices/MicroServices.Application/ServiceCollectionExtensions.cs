@@ -19,7 +19,7 @@ namespace MicroServices.Application
 
             // 注册应用层服务
             services.AddScoped<IUserService, UserService>();
-            // services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IRoleService, RoleService>();
             // services.AddScoped<IMenuService, MenuService>();
             // services.AddScoped<IPermissionService, PermissionService>();
 

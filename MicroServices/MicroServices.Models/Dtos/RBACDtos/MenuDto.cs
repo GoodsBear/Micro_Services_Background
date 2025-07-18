@@ -1,7 +1,7 @@
 ﻿using MricoServices.Shared;
 using SqlSugar;
 
-namespace MricoServices.Models.Dtos
+namespace MicroServices.Models.Dtos.RBACDtos
 {
     /// <summary>
     /// 菜单列表 DTO

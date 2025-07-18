@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MicroServices.Models.Dtos.RBACDtos;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MricoServices.Application.IService.RBAC;
-using MricoServices.Models.Dtos;
 using MricoServices.Shared.ApiResult;
 
-namespace MicroService.API.Controllers
+namespace MicroServices.API.Controllers.RBAC
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
@@ -16,6 +16,17 @@ namespace MicroService.API.Controllers
         {
             this.userService = userService;
         }
+        /// <summary>
+        /// 用户登录
+        /// </summary>
+        /// <param name="userLoginDto"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<ApiResult> AuthenticateUserAsync(UserLoginDto userLoginDto)
+        {
+            return await userService.AuthenticateUserAsync(userLoginDto);
+        }
+
         /// <summary>
         /// 用户添加
         /// </summary>

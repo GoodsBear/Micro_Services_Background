@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MicroServices.Models.Dtos
+namespace MicroServices.Models.Dtos.RBACDtos
 {
     public class UserLoginDto
     {
@@ -17,9 +17,4 @@ namespace MicroServices.Models.Dtos
         /// </summary>
         public string LoginPwd { get; set; }
     }
-
-    //public class  ShowDto()
-    //{
-        
-    //}
 }
