@@ -5,6 +5,7 @@ using MicroServices.Repository.Repository.RBAC_Repository;
 using MricoServices.Application.IService.RBAC;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared.ApiResult;
+using SqlSugar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,12 +17,14 @@ namespace MricoServices.Application.Services.RBAC
     public class RoleService : IRoleService
     {
         private readonly IUserRepository userRepository;
+        private readonly IPermissionRepository permissionRepository;
         private readonly IRoleRepository roleRepository;
         private readonly IMapper mapper;
 
-        public RoleService(IRoleRepository roleRepository,IUserRepository userRepository, IMapper mapper)
+        public RoleService(IRoleRepository roleRepository,IUserRepository userRepository,IPermissionRepository permissionRepository,IMapper mapper)
         {
             this.userRepository = userRepository;
+            this.permissionRepository = permissionRepository;
             this.roleRepository = roleRepository;
             this.mapper = mapper;
         }
@@ -72,15 +75,68 @@ namespace MricoServices.Application.Services.RBAC
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
 
-        public Task<ApiResult<ApiPaging<List<RoleDto>>>> GetAllRolesAsync()
+        public async Task<ApiResult<ApiPaging<List<RoleDto>>>> GetAllRolesAsync(SearchRoleDto searchRoleDto)
+        {
+            var list = roleRepository.GetAll();
+
+            if(!string.IsNullOrEmpty(searchRoleDto.RoleName))
+            {
+                list = list.Where(d => d.RoleName.Contains(searchRoleDto.RoleName));
+            }
+
+           var totalCount = await list.CountAsync();
+            var totalPage = (int)Math.Ceiling(await list.CountAsync() * 1.0 / searchRoleDto.PageSize);
+            var page = await list.OrderByDescending(d => d.CreatedAt).Skip((searchRoleDto.PageIndex - 1) * searchRoleDto.PageSize).Take(searchRoleDto.PageSize).ToListAsync();
+
+            var data = mapper.Map<List<RoleDto>>(page);
+
+            // 封装为 ApiPaging 对象
+            var apiPagingData = new ApiPaging<List<RoleDto>>
+            {
+                TotalCount = totalCount,
+                TotalPage = totalPage,
+                Data = data
+            };
+
+            // 返回成功的 ApiResult
+            return ApiResult<ApiPaging<List<RoleDto>>>.Success(ResultCode.Ok, apiPagingData);
+
+        }
+
+        public Task<ApiResult> GetRoleIdToAddMenu(int roleId, RoleIdToAddAndUpdateMenuDto roleIdToAddAndUpdateMenuDto)
         {
             throw new NotImplementedException();
         }
+
+        public Task<ApiResult> GetRoleIdToAddPermission(int roleId, RoleIdToAddAndUpdatePermissionDto roleIdToAddAndUpdatePermissionDto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult> GetRoleIdToAddUser(int roleId, RoleIdToAddAndUpdateUserDto roleIdToAddAndUpdateUserDto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult> GetRoleIdToUpdateMenu(int roleId, RoleIdToAddAndUpdateMenuDto roleIdToAddAndUpdateMenuDto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult> GetRoleIdToUpdatePermission(int roleId, RoleIdToAddAndUpdatePermissionDto roleIdToAddAndUpdatePermissionDto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult> GetRoleToUpdateAddUser(int roleId, RoleIdToAddAndUpdateUserDto roleIdToAddAndUpdateUserDto)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// 角色修改
         /// </summary>

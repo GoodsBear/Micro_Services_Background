@@ -13,8 +13,8 @@ namespace MricoServices.Shared.ApiResult
     /// <typeparam name="T"></typeparam>
     public class ApiPaging<T>
     {
-        public int TotleCount { get; set; }
-        public int TotlePage { get; set; }
+        public int TotalCount { get; set; }
+        public int TotalPage { get; set; }
         public T Data { get; set; }
     }
 }

@@ -1,11 +1,5 @@
 ﻿using MicroServices.Models.Dtos.RBACDtos;
-using MricoServices.Domain.RBAC;
 using MricoServices.Shared.ApiResult;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MricoServices.Application.IService.RBAC
 {
@@ -16,7 +10,7 @@ namespace MricoServices.Application.IService.RBAC
         /// 获取角色列表信息
         /// </summary>
         /// <returns></returns>
-        Task<ApiResult<ApiPaging<List<RoleDto>>>> GetAllRolesAsync();
+        Task<ApiResult<ApiPaging<List<RoleDto>>>> GetAllRolesAsync(SearchRoleDto searchRoleDto);
         /// <summary>
         /// 添加角色
         /// </summary>
@@ -35,5 +29,45 @@ namespace MricoServices.Application.IService.RBAC
         /// <param name="roleId"></param>
         /// <returns></returns>
         Task<ApiResult> DeleteRoleAsync(int roleId);
+        /// <summary>
+        /// 给角色分配用户
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        Task<ApiResult> GetRoleIdToAddUser(int roleId, RoleIdToAddAndUpdateUserDto roleIdToAddAndUpdateUserDto);
+        /// <summary>
+        /// 给用户更新角色
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <param name="roleIdToAddAndUpdateUserDto"></param>
+        /// <returns></returns>
+        Task<ApiResult> GetRoleToUpdateAddUser(int roleId, RoleIdToAddAndUpdateUserDto roleIdToAddAndUpdateUserDto);
+        /// <summary>
+        /// 给角色添加权限
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        Task<ApiResult> GetRoleIdToAddPermission(int roleId, RoleIdToAddAndUpdatePermissionDto roleIdToAddAndUpdatePermissionDto);
+        /// <summary>
+        /// 给角色更新权限
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <param name="roleIdToAddAndUpdatePermissionDto"></param>
+        /// <returns></returns>
+        Task<ApiResult> GetRoleIdToUpdatePermission(int roleId, RoleIdToAddAndUpdatePermissionDto roleIdToAddAndUpdatePermissionDto);
+        /// <summary>
+        /// 给角色添加菜单
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <param name="roleIdToAddAndUpdateMenuDto"></param>
+        /// <returns></returns>
+        Task<ApiResult> GetRoleIdToAddMenu(int roleId, RoleIdToAddAndUpdateMenuDto roleIdToAddAndUpdateMenuDto);
+        /// <summary>
+        /// 给角色更新菜单
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <param name="roleIdToAddAndUpdateMenuDto"></param>
+        /// <returns></returns>
+        Task<ApiResult> GetRoleIdToUpdateMenu(int roleId, RoleIdToAddAndUpdateMenuDto roleIdToAddAndUpdateMenuDto);
     }
 }

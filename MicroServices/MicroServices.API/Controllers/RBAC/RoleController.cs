@@ -17,6 +17,16 @@ namespace MicroServices.API.Controllers.RBAC
             this.roleService = roleService;
         }
         /// <summary>
+        /// 获取角色列表
+        /// </summary>
+        /// <param name="searchRoleDto"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ApiResult<ApiPaging<List<RoleDto>>>> GetAllRolesAsync([FromQuery]SearchRoleDto searchRoleDto)
+        {
+            return await roleService.GetAllRolesAsync(searchRoleDto);
+        }
+        /// <summary>
         /// 角色添加
         /// </summary>
         /// <param name="createUpdateRoleDto"></param>

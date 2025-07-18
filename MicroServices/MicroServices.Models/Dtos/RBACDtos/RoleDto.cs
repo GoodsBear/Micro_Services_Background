@@ -32,4 +32,23 @@ namespace MicroServices.Models.Dtos.RBACDtos
     {
         public string? RoleName { get; set; }
     }
+    /// <summary>
+    /// 给角色分配用户,用于添加和更新用户
+    /// </summary>
+    public class RoleIdToAddAndUpdateUserDto
+    {
+        public List<int> UserIds { get; set; } = new List<int>();
+    }
+    /// <summary>
+    /// 给角色分配权限,用于添加和更新权限
+    /// </summary>
+    public class RoleIdToAddAndUpdatePermissionDto
+    {
+        public List<int> PermissionIds { get; set; } = new List<int>();
+    }
+
+    public class RoleIdToAddAndUpdateMenuDto
+    {
+        public List<int> MenuIds { get; set; } = new List<int>();
+    }
 }
