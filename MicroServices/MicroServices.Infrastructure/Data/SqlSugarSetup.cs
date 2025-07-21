@@ -1,5 +1,6 @@
 ﻿// MicroServices.Infrastructure/Data/SqlSugarSetup.cs
 using Dm.util;
+using MicroServices.Domain.InStorage;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared;
 using SqlSugar;
