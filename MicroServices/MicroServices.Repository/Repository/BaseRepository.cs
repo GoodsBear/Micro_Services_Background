@@ -44,23 +44,31 @@ namespace MricoServices.Repository.Repository
         /// <param name="entity"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public async Task<bool> SoftDeleteAsync(T entity)
+        public async Task<int> SoftDeleteAsync(int id)
         {
-            // 检查实体是否是 AuditableEntity 或其子类
-            if (entity is AuditableEntity auditableEntity)
+            // 确保 T 类型实现了 AuditableEntity 接口
+            if (!typeof(AuditableEntity).IsAssignableFrom(typeof(T)))
             {
-                auditableEntity.IsDeleted = true; // 标记为已删除
-
-                // 只更新 IsDeleted, LastModifiedAt, LastModifiedBy 这三个字段，避免更新其他不必要的字段
-                return await Context.Updateable(auditableEntity)
-                                    .UpdateColumns(it => new { it.IsDeleted, it.DeletedAt, it.DeletedBy, it.DeletedByUserName }) // 明确更新这些列
-                                    .ExecuteCommandHasChangeAsync(); // 返回是否有数据更新
-            }
-            else
-            {
-                // 如果实体不是 AuditableEntity 类型，则无法进行软删除
                 throw new InvalidOperationException($"实体 {typeof(T).Name} 未实现 AuditableEntity，无法进行软删除。");
             }
+
+            // 先查询实体
+            var entity = await GetByIdAsync(id);
+            if (entity == null)
+            {
+                return 0;
+            }
+
+            // 转换为 AuditableEntity 并设置软删除标记
+            if (entity is AuditableEntity auditableEntity)
+            {
+                auditableEntity.IsDeleted = true;
+
+                // 使用 UpdateAsync 方法，AOP 会自动填充审计字段
+                return await UpdateAsync(entity);
+            }
+
+            return 0;
         }
 
         /// <summary>
@@ -87,9 +95,9 @@ namespace MricoServices.Repository.Repository
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public async Task<bool> UpdateAsync(T entity)
+        public async Task<int> UpdateAsync(T entity)
         {
-            return await Context.Updateable(entity).ExecuteCommandAsync() > 0;
+            return await Context.Updateable(entity).ExecuteCommandAsync();
         }
 
 

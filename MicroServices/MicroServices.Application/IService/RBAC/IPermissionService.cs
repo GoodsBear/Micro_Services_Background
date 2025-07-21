@@ -1,4 +1,5 @@
-﻿using MricoServices.Domain.RBAC;
+﻿using MicroServices.Models.Dtos.RBACDtos;
+using MricoServices.Domain.RBAC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,10 @@ namespace MricoServices.Application.IService.RBAC
     // Interfaces/IPermissionService.cs
     public interface IPermissionService
     {
-        Task<Permission> GetPermissionByIdAsync(int permissionId);
-        Task<List<Permission>> GetAllPermissionsAsync();
-        Task AddPermissionAsync(Permission permission);
-        Task UpdatePermissionAsync(Permission permission);
+        Task<PermissionDto> GetPermissionByIdAsync(int permissionId);
+        Task<List<PermissionDto>> GetAllPermissionsAsync();
+        Task AddPermissionAsync(CreateUpdatePermissionDto createUpdatePermissionDto);
+        Task UpdatePermissionAsync(CreateUpdatePermissionDto createUpdatePermissionDto);
         Task DeletePermissionAsync(int permissionId);
     }
 }

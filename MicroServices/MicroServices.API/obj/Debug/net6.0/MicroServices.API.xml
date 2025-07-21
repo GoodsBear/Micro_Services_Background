@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MicroServices.API</name>
+    </assembly>
+    <members>
+        <member name="M:MicroServices.API.Controllers.RBAC.RoleController.GetAllRolesAsync(MicroServices.Models.Dtos.RBACDtos.SearchRoleDto)">
+            <summary>
+            获取角色列表
+            </summary>
+            <param name="searchRoleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.RBAC.RoleController.AddRoleAsync(MicroServices.Models.Dtos.RBACDtos.CreateUpdateRoleDto)">
+            <summary>
+            角色添加
+            </summary>
+            <param name="createUpdateRoleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.RBAC.RoleController.DeleteRoleAsync(System.Int32)">
+            <summary>
+            角色软删除
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.RBAC.RoleController.UpdateRoleAsync(System.Int32,MicroServices.Models.Dtos.RBACDtos.CreateUpdateRoleDto)">
+            <summary>
+            角色更新
+            </summary>
+            <param name="createUpdateRoleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.RBAC.UserController.AuthenticateUserAsync(MicroServices.Models.Dtos.RBACDtos.UserLoginDto)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="userLoginDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.RBAC.UserController.CreateUserAsync(MicroServices.Models.Dtos.RBACDtos.CreateUpdateUserDto)">
+            <summary>
+            用户添加
+            </summary>
+            <param name="createUpdateUserDto"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

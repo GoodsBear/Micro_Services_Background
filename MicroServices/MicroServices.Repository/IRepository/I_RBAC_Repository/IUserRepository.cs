@@ -1,5 +1,5 @@
-﻿using MricoServices.Domain.RBAC;
-using MricoServices.Models.Dtos;
+﻿using MicroServices.Models.Dtos.RBACDtos;
+using MricoServices.Domain.RBAC;
 using MricoServices.Repository.IRepository;
 using MricoServices.Shared.ApiResult;
 using SqlSugar;
@@ -19,7 +19,7 @@ namespace MicroServices.Repository.IRepository.I_RBAC_Repository
         /// <param name="userName"></param>
         /// <param name="userPwd"></param>
         /// <returns></returns>
-        Task<ApiResult<UserDto>> Login(string userName, string userPwd);
+        Task<ApiResult<UserDto>> UserLogin(UserLoginDto userLoginDto);
 
         ///// <summary>
         ///// 根据用户名获取用户（通常用于登录验证）
