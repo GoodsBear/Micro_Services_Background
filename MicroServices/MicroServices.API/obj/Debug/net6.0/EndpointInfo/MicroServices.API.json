@@ -124,6 +124,36 @@
         }
       }
     },
+    "/api/Process/GetProcessRoute": {
+      "get": {
+        "tags": [
+          "Process"
+        ],
+        "summary": "获取工序路线",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessRouteDtoListApiResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessRouteDtoListApiResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessRouteDtoListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Role/GetAllRoles": {
       "get": {
         "tags": [
@@ -711,6 +741,60 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ProcessDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessRouteDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "processRouteCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "processRouteName": {
+            "type": "string",
+            "nullable": true
+          },
+          "states": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "explain": {
+            "type": "string",
+            "nullable": true
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessRouteDtoListApiResult": {
+        "type": "object",
+        "properties": {
+          "isSuc": {
+            "type": "boolean"
+          },
+          "code": {
+            "$ref": "#/components/schemas/ResultCode"
+          },
+          "msg": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProcessRouteDto"
             },
             "nullable": true
           }

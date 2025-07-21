@@ -83,4 +83,23 @@ namespace MicroServices.Models.Dtos
         [SugarColumn(ColumnName = "Remark", IsNullable = true)]
         public string Remark { get; set; }
     }
+
+    public class ProcessRouteDto
+    {
+        public int Id { get; set; }
+        [SugarColumn(ColumnName = "ProcessRouteCode", IsNullable = true, ColumnDescription = "工艺路线编号")]
+        public string ProcessRouteCode { get; set; }
+
+        [SugarColumn(ColumnName = "ProcessRouteName", IsNullable = true, ColumnDescription = "工艺路线名称")]
+        public string ProcessRouteName { get; set; }
+
+        [SugarColumn(ColumnName = "States", IsNullable = true, ColumnDescription = "状态")]
+        public int? States { get; set; }
+
+        [SugarColumn(ColumnName = "Explain", IsNullable = true, ColumnDescription = "说明")]
+        public string Explain { get; set; }
+
+        [SugarColumn(ColumnName = "Remark", IsNullable = true, ColumnDescription = "备注")]
+        public string Remark { get; set; }
+    }
 }

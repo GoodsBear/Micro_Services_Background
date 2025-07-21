@@ -16,11 +16,13 @@ namespace MicroServices.API.Controllers
     {
         private readonly IProcessService processService;
         private readonly IProcessCompositionService compositionService;
+        private readonly IProcessRouteService processRouteService;
 
-        public ProcessController(IProcessService processService,IProcessCompositionService compositionService)
+        public ProcessController(IProcessService processService,IProcessCompositionService compositionService,IProcessRouteService processRouteService)
         {
             this.processService = processService;
             this.compositionService = compositionService;
+            this.processRouteService = processRouteService;
         }
 
         /// <summary>
@@ -72,6 +74,24 @@ namespace MicroServices.API.Controllers
             catch (Exception ex)
             {
                 return ApiResult<List<ProcessCompositionDto>>.Fail(ResultCode.Fail, ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 获取工序路线
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ApiResult<List<ProcessRouteDto>>> GetProcessRouteAsync()
+        {
+            try
+            {
+                return await processRouteService.GetProcessRouteAsync();
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }

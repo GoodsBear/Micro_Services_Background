@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MicroServices.Models.Dtos;
+using MricoServices.Shared.ApiResult;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,6 @@ namespace MicroServices.Application.IService.ProcessInfo
 {
     public interface IProcessRouteService
     {
+        Task<ApiResult<List<ProcessRouteDto>>> GetProcessRouteAsync();
     }
 }

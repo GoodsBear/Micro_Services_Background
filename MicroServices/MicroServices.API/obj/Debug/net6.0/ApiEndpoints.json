@@ -72,6 +72,26 @@
     ]
   },
   {
+    "ContainingType": "MicroServices.API.Controllers.ProcessController",
+    "Method": "GetProcessRouteAsync",
+    "RelativePath": "api/Process/GetProcessRoute",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.ProcessRouteDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MicroServices.API.Controllers.RBAC.RoleController",
     "Method": "AddRoleAsync",
     "RelativePath": "api/Role/AddRole",
