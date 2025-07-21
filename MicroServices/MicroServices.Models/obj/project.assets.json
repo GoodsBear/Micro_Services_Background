@@ -3662,26 +3662,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shunzi\\.nuget\\packages\\": {},
-    "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lenovo\\.nuget\\packages\\": {},
+    "D:\\zhuanye2\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
+      "projectUniqueName": "D:\\practialtraction2\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
       "projectName": "MicroServices.Models",
-      "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
-      "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\obj\\",
+      "projectPath": "D:\\practialtraction2\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
+      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+      "outputPath": "D:\\practialtraction2\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\zhuanye2\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3690,18 +3687,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
-              "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
+            "D:\\practialtraction2\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
+              "projectPath": "D:\\practialtraction2\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
             },
-            "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
-              "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
+            "D:\\practialtraction2\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+              "projectPath": "D:\\practialtraction2\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
             }
           }
         }
@@ -3743,16 +3739,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "获取包漏洞数据时出错: 无法加载源 https://api.nuget.org/v3/index.json 的服务索引。"
-    }
-  ]
+  }
 }

@@ -1,4 +1,6 @@
-﻿using MicroServices.Repository.IRepository.I_RBAC_Repository;
+﻿using MicroServices.Repository.IRepository.I_Process_Repository;
+using MicroServices.Repository.IRepository.I_RBAC_Repository;
+using MicroServices.Repository.Repository.Process_Repository;
 using MicroServices.Repository.Repository.RBAC_Repository;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -39,6 +41,9 @@ namespace MicroServices.Infrastructure
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IPermissionRepository, PermissionRepository>();
             services.AddScoped<IMenuRepository, MenuRepository>();
+            services.AddScoped<IProcessRepository, ProcessRepository>();//工序
+            services.AddScoped<IProcessCompositionRepository, ProcessCompositionRepository>();//工序组合
+            services.AddScoped<IProcessRouteRepository, ProcessRouteRepository>();//工序路线
 
             return services;
         }

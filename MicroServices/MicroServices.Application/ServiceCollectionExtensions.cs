@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MicroServices.Application.IService.ProcessInfo;
+using MicroServices.Application.Services.ProcessInfo;
+using Microsoft.Extensions.DependencyInjection;
 using MricoServices.Application.IService.RBAC;
 using MricoServices.Application.MapperProFiles;
 using MricoServices.Application.Services.RBAC;
@@ -22,6 +24,9 @@ namespace MicroServices.Application
             services.AddScoped<IRoleService, RoleService>();
             // services.AddScoped<IMenuService, MenuService>();
             // services.AddScoped<IPermissionService, PermissionService>();
+            services.AddScoped<IProcessService, ProcessService>();
+            services.AddScoped<IProcessCompositionService, ProcessCompositionService>();
+            services.AddScoped<IProcessRouteService, ProcessRouteService>();
 
             return services;
         }

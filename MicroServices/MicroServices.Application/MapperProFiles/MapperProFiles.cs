@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using MicroServices.Domain.ProcessInfo;
+using MicroServices.Models.Dtos;
 using MicroServices.Models.Dtos.RBACDtos;
 using MricoServices.Domain.RBAC;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +33,10 @@ namespace MricoServices.Application.MapperProFiles
             CreateMap<MenuDto, Menu>().ReverseMap();
             CreateMap<CreateUpdateMenuDto, MenuDto>().ReverseMap();
             CreateMap<CreateUpdateMenuDto, Menu>().ReverseMap();
+
+            CreateMap<Processes, ProcessDto>().ReverseMap();
+            CreateMap<CreateOrUpdateProcessCompositionDto, ProcessComposition>().ReverseMap();
+            CreateMap<ProcessComposition, ProcessCompositionDto>().ReverseMap();
         }
     }
 }

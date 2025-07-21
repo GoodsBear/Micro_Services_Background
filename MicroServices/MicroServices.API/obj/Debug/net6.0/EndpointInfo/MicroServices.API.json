@@ -5,6 +5,125 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Process/GetProcess": {
+      "get": {
+        "tags": [
+          "Process"
+        ],
+        "summary": "获取工序信息",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessDtoListApiResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessDtoListApiResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessDtoListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Process/CreateProcessComposition": {
+      "post": {
+        "tags": [
+          "Process"
+        ],
+        "summary": "创建工序组合",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateProcessCompositionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateProcessCompositionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateProcessCompositionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessCompositionDtoListApiResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessCompositionDtoListApiResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessCompositionDtoListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Process/GetProcessComposition": {
+      "get": {
+        "tags": [
+          "Process"
+        ],
+        "summary": "获取所有工序组合",
+        "parameters": [
+          {
+            "name": "processId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessCompositionDtoListApiResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessCompositionDtoListApiResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessCompositionDtoListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Role/GetAllRoles": {
       "get": {
         "tags": [
@@ -377,6 +496,54 @@
         },
         "additionalProperties": false
       },
+      "CreateOrUpdateProcessCompositionDto": {
+        "type": "object",
+        "properties": {
+          "serialNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "processId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "processRouteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nexiProcessId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nextProcessRelation": {
+            "type": "string",
+            "nullable": true
+          },
+          "keyProcess": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "readinessTime": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "waitingTime": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "colors": {
+            "type": "string",
+            "nullable": true
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateUpdateRoleDto": {
         "type": "object",
         "properties": {
@@ -412,6 +579,139 @@
           },
           "phoneNumber": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessCompositionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "serialNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "processId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "processCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "processName": {
+            "type": "string",
+            "nullable": true
+          },
+          "processRouteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nexiProcessId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nextProcessRelation": {
+            "type": "string",
+            "nullable": true
+          },
+          "keyProcess": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "readinessTime": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "waitingTime": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "colors": {
+            "type": "string",
+            "nullable": true
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessCompositionDtoListApiResult": {
+        "type": "object",
+        "properties": {
+          "isSuc": {
+            "type": "boolean"
+          },
+          "code": {
+            "$ref": "#/components/schemas/ResultCode"
+          },
+          "msg": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProcessCompositionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessDto": {
+        "type": "object",
+        "properties": {
+          "processName": {
+            "type": "string",
+            "nullable": true
+          },
+          "processCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "states": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "specification": {
+            "type": "string",
+            "nullable": true
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProcessDtoListApiResult": {
+        "type": "object",
+        "properties": {
+          "isSuc": {
+            "type": "boolean"
+          },
+          "code": {
+            "$ref": "#/components/schemas/ResultCode"
+          },
+          "msg": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProcessDto"
+            },
             "nullable": true
           }
         },

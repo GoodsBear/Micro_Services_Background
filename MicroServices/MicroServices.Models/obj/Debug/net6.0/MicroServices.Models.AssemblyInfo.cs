@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroServices.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cbc29382cce6b1f6930771c02ac73144c9339b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00cbe6712cbcf1025c37bdbc4e8c5a34b1c8ce4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroServices.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroServices.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

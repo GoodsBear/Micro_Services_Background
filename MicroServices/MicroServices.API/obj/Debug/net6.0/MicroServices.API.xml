@@ -4,6 +4,24 @@
         <name>MicroServices.API</name>
     </assembly>
     <members>
+        <member name="M:MicroServices.API.Controllers.ProcessController.GetProcessAsync">
+            <summary>
+            获取工序信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProcessController.CreateProcessCompositionAsync(MicroServices.Models.Dtos.CreateOrUpdateProcessCompositionDto)">
+            <summary>
+            创建工序组合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProcessController.GetProcessCompositionAsync(System.Int32)">
+            <summary>
+            获取所有工序组合
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:MicroServices.API.Controllers.RBAC.RoleController.GetAllRolesAsync(MicroServices.Models.Dtos.RBACDtos.SearchRoleDto)">
             <summary>
             获取角色列表

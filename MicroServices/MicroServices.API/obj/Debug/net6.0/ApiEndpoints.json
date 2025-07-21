@@ -1,5 +1,77 @@
 [
   {
+    "ContainingType": "MicroServices.API.Controllers.ProcessController",
+    "Method": "CreateProcessCompositionAsync",
+    "RelativePath": "api/Process/CreateProcessComposition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createOrUpdateProcessCompositionDto",
+        "Type": "MicroServices.Models.Dtos.CreateOrUpdateProcessCompositionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.ProcessCompositionDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProcessController",
+    "Method": "GetProcessAsync",
+    "RelativePath": "api/Process/GetProcess",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.ProcessDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProcessController",
+    "Method": "GetProcessCompositionAsync",
+    "RelativePath": "api/Process/GetProcessComposition",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "processId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.ProcessCompositionDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MicroServices.API.Controllers.RBAC.RoleController",
     "Method": "AddRoleAsync",
     "RelativePath": "api/Role/AddRole",
