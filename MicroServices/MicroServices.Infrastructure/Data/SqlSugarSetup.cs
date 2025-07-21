@@ -1,9 +1,13 @@
 ﻿// MicroServices.Infrastructure/Data/SqlSugarSetup.cs
 using Dm.util;
+using MicroServices.Domain.Equipments;
+using MicroServices.Domain.FacatoryFloors;
+using MicroServices.Domain.Materials;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared; // 确保 AuditableEntity 在这里
 using SqlSugar;
 using System;
+using System.Reflection;
 
 namespace MricoServices.Infrastructure.Data
 {
@@ -29,7 +33,19 @@ namespace MricoServices.Infrastructure.Data
                 typeof(Permission),
                 typeof(RolePermission),
                 typeof(Menu),
-                typeof(RoleMenu)
+                typeof(RoleMenu),
+                typeof(Equipment),
+                typeof(EquipmentType),
+                typeof(FactoryFloor),
+                typeof(Team),
+                typeof(TeamType),
+                typeof(TeamUser),
+                typeof(Material),
+                typeof(Unite),
+                typeof(TypeInfos),
+                typeof(Category),
+                typeof(PropertyInfos),
+                typeof(Product)
             );
 
             // 2. 配置全局查询过滤器 (实现软删除的核心)

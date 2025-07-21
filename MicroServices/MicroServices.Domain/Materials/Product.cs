@@ -36,31 +36,31 @@ namespace MicroServices.Domain.Materials
         /// 单位
         /// </summary>
         [SugarColumn(IsNullable = false, Length = 20, ColumnDescription = "单位")]
-        public string Unit { get; set; }
+        public int Unit { get; set; }
 
         /// <summary>
         /// 产品类型(成品/半成品等)
         /// </summary>
         [SugarColumn(IsNullable = false, Length = 50, ColumnDescription = "产品类型")]
-        public string ProductType { get; set; }
+        public int ProductType { get; set; }
 
         /// <summary>
         /// 产品属性(自制/外购/外协等)
         /// </summary>
         [SugarColumn(IsNullable = false, Length = 50, ColumnDescription = "产品属性")]
-        public string ProductProperty { get; set; }
+        public int ProductProperty { get; set; }
 
         /// <summary>
         /// 产品分类ID
         /// </summary>
         [SugarColumn(IsNullable = false, ColumnDescription = "产品分类ID")]
-        public string CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
         /// <summary>
         /// 状态(启用/禁用)
         /// </summary>
         [SugarColumn(IsNullable = false, Length = 20, ColumnDescription = "状态")]
-        public string Status { get; set; }
+        public int Status { get; set; }
 
         /// <summary>
         /// 有效期

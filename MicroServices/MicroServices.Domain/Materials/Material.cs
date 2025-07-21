@@ -111,18 +111,27 @@ namespace MicroServices.Domain.Materials
         public string Remark { get; set; }
     }
     /// <summary>
-    /// 物料类型
+    /// 单位表
     /// </summary>
-    [SugarTable("MaterialType", TableDescription = "物料类型表")]
-    public class MaterialType : AuditableEntity
+    [SugarTable("Unite", TableDescription = "单位表")]
+    public class Unite : AuditableEntity
     {
-        [SugarColumn(ColumnName = "MaterialTypeName")]
-        public string MaterialTypeName { get; set; }
+        [SugarColumn(ColumnName = "UniteName")]
+        public string UniteName { get; set; }
     }
     /// <summary>
-    /// 物料分类
+    /// 类型
     /// </summary>
-    [SugarTable("Category", TableDescription = "物料分类表")]
+    [SugarTable("TypeInfos", TableDescription = "类型表")]
+    public class TypeInfos : AuditableEntity
+    {
+        [SugarColumn(ColumnName = "TypeName")]
+        public string TypeName { get; set; }
+    }
+    /// <summary>
+    /// 分类
+    /// </summary>
+    [SugarTable("Category", TableDescription = "分类表")]
     public class Category : AuditableEntity
     {
         [SugarColumn(ColumnName = "CategoryName")]
@@ -131,10 +140,10 @@ namespace MicroServices.Domain.Materials
         public int ParentId { get; set; }
     }
     /// <summary>
-    /// 物料属性
+    /// 属性
     /// </summary>
-    [SugarTable("MaterialProperty", TableDescription = "物料属性表")]
-    public class MaterialProperty : AuditableEntity
+    [SugarTable("PropertyInfos", TableDescription = "属性表")]
+    public class PropertyInfos : AuditableEntity
     {
         [SugarColumn(ColumnName = "MaterialPropertyName")]
         public string MaterialPropertyName { get; set; }

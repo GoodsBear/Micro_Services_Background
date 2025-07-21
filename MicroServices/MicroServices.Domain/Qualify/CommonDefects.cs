@@ -36,7 +36,7 @@ namespace MicroServices.Domain.Qualify
         /// </summary>
 
         [SugarColumn(ColumnDescription = "缺陷位置id")]
-        public int DefectLocationID { get; set; }
+        public int DefectLocationId { get; set; }
         /// <summary>
         /// 缺陷等级id
         /// </summary>
