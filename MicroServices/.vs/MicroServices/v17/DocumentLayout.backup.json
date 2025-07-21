@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\ERP\\Micro_Services_Background\\MicroServices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F08FC5DF-984C-452E-B1B1-204662BAC058}|MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj|d:\\erp\\micro_services_background\\microservices\\microservices.infrastructure\\data\\sqlsugarsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F08FC5DF-984C-452E-B1B1-204662BAC058}|MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj|solutionrelative:microservices.infrastructure\\data\\sqlsugarsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|d:\\erp\\micro_services_background\\microservices\\microservices.domain\\materials\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|solutionrelative:microservices.domain\\materials\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|d:\\erp\\micro_services_background\\microservices\\microservices.domain\\materials\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|solutionrelative:microservices.domain\\materials\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -17,43 +30,60 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Materials\\Product.cs",
+              "RelativeDocumentMoniker": "MicroServices.Domain\\Materials\\Product.cs",
+              "ToolTip": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Materials\\Product.cs",
+              "RelativeToolTip": "MicroServices.Domain\\Materials\\Product.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T07:24:46.403Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Material.cs",
+              "DocumentMoniker": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Materials\\Material.cs",
+              "RelativeDocumentMoniker": "MicroServices.Domain\\Materials\\Material.cs",
+              "ToolTip": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Materials\\Material.cs",
+              "RelativeToolTip": "MicroServices.Domain\\Materials\\Material.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAzwCAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T07:23:49.423Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:173880892:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SqlSugarSetup.cs",
+              "DocumentMoniker": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
+              "RelativeDocumentMoniker": "MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
+              "ToolTip": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
+              "RelativeToolTip": "MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T07:08:13.029Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 113,
+          "DockedWidth": 1375,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 583,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

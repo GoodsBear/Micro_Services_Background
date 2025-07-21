@@ -30,7 +30,7 @@ namespace MicroServices.Domain.Materials
         /// 单位
         /// </summary>
         [SugarColumn(ColumnName = "Unit", IsNullable = false)]
-        public string Unit { get; set; }
+        public int Unit { get; set; }
 
         /// <summary>
         /// 物料类型(原材料/半成品/成品等)
