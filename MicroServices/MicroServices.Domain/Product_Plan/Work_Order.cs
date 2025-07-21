@@ -1,4 +1,5 @@
-﻿using SqlSugar;
+﻿using MricoServices.Shared;
+using SqlSugar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,8 @@ namespace MicroServices.Domain.Product_Plan
     /// <summary>
     /// 生产工单表
     /// </summary>
-    [SugarTable("Work_Order")]
-    public class Work_Order
+    [SugarTable("Work_Order", TableDescription = "生产工单表")]
+    public class Work_Order : AuditableEntity
     {
 
         /// <summary>

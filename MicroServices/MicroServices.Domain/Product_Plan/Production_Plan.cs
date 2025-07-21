@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 namespace MicroServices.Domain.Product_Plan
 {
     /// <summary>
-    /// 生产计划表
+    /// 生产计划表 ///111
     /// </summary>
-    [SugarTable("Production_Planning")]
+    [SugarTable("Production_Planning", TableDescription = "生产计划表")]
     public class Production_Planning : AuditableEntity
     {
         /// <summary>

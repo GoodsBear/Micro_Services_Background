@@ -1,5 +1,6 @@
 ﻿// MicroServices.Infrastructure/Data/SqlSugarSetup.cs
 using Dm.util;
+using MicroServices.Domain.Product_Plan;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared; // 确保 AuditableEntity 在这里
 using SqlSugar;
@@ -29,7 +30,10 @@ namespace MricoServices.Infrastructure.Data
                 typeof(Permission),
                 typeof(RolePermission),
                 typeof(Menu),
-                typeof(RoleMenu)
+                typeof(RoleMenu),
+                typeof(Production_Planning), //生产计划表
+                typeof(Work_Order), //生产工单表
+                typeof(Work_Order_Tasks) // 工单任务表
             );
 
             // 2. 配置全局查询过滤器 (实现软删除的核心)
