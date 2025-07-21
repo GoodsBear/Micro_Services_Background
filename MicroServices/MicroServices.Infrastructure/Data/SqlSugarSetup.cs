@@ -3,6 +3,7 @@ using Dm.util;
 using MicroServices.Domain.Equipments;
 using MicroServices.Domain.FacatoryFloors;
 using MicroServices.Domain.Materials;
+using MicroServices.Domain.Qualify;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared; // 确保 AuditableEntity 在这里
 using SqlSugar;
@@ -45,7 +46,11 @@ namespace MricoServices.Infrastructure.Data
                 typeof(TypeInfos),
                 typeof(Category),
                 typeof(PropertyInfos),
-                typeof(Product)
+                typeof(Product),
+                typeof(CommonDefects),
+                typeof(DefectionType),
+                typeof(DefectLevel),
+                typeof(DefectLocation)
             );
 
             // 2. 配置全局查询过滤器 (实现软删除的核心)
