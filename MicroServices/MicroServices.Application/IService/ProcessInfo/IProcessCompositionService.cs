@@ -11,6 +11,6 @@ namespace MicroServices.Application.IService.ProcessInfo
     public interface IProcessCompositionService
     {
         Task<ApiResult<List<ProcessCompositionDto>>> CreateProcessCompositionAsync(CreateOrUpdateProcessCompositionDto createOrUpdateProcessCompositionDto);
-        Task<ApiResult<List<ProcessCompositionDto>>> GetProcessCompositionAsync(int processId);
+        Task<ApiResult<List<ProcessCompositionDto>>> GetProcessCompositionAsync(int? processrouteId);
     }
 }

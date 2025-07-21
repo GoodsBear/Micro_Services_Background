@@ -92,7 +92,7 @@
         "summary": "获取所有工序组合",
         "parameters": [
           {
-            "name": "processId",
+            "name": "processrouteId",
             "in": "query",
             "schema": {
               "type": "integer",

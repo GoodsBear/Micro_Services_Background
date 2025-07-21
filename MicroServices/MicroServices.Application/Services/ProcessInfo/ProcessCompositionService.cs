@@ -55,16 +55,12 @@ namespace MicroServices.Application.Services.ProcessInfo
         /// 获取所有工序组合
         /// </summary>
         /// <returns></returns>
-        public async Task<ApiResult<List<ProcessCompositionDto>>> GetProcessCompositionAsync(int processId)
+        public async Task<ApiResult<List<ProcessCompositionDto>>> GetProcessCompositionAsync(int? processrouteId)
         {
             try
             {
                 // 查询并包含导航属性
                 var query = processCompositionRepository.GetAll().Includes(x => x.ProcessInfo);
-                if (processId > 0)
-                {
-                    query = query.Where(x => x.ProcessId == processId);
-                }
                 var compositions = await query.ToListAsync();
 
                 // 映射为 DTO
@@ -85,6 +81,11 @@ namespace MicroServices.Application.Services.ProcessInfo
                     ProcessCode = x.ProcessInfo?.ProcessCode,
                     ProcessName = x.ProcessInfo?.ProcessName
                 }).ToList();
+
+                if (processrouteId != null)
+                {
+                    dtos = dtos.Where(x => x.ProcessRouteId == processrouteId).ToList();
+                }
 
                 return ApiResult<List<ProcessCompositionDto>>.Success(ResultCode.Ok, dtos);
             }

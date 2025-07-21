@@ -16,7 +16,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:MicroServices.API.Controllers.ProcessController.GetProcessCompositionAsync(System.Int32)">
+        <member name="M:MicroServices.API.Controllers.ProcessController.GetProcessCompositionAsync(System.Nullable{System.Int32})">
             <summary>
             获取所有工序组合
             </summary>

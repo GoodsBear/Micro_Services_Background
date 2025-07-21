@@ -63,11 +63,11 @@ namespace MicroServices.API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<ApiResult<List<ProcessCompositionDto>>> GetProcessCompositionAsync(int processId)
+        public async Task<ApiResult<List<ProcessCompositionDto>>> GetProcessCompositionAsync(int? processrouteId)
         {
             try
             {
-                return await compositionService.GetProcessCompositionAsync(processId);
+                return await compositionService.GetProcessCompositionAsync(processrouteId);
             }
             catch (Exception ex)
             {
