@@ -38,6 +38,7 @@ namespace MricoServices.Application.MapperProFiles
             CreateMap<CreateOrUpdateProcessCompositionDto, ProcessComposition>().ReverseMap();
             CreateMap<ProcessComposition, ProcessCompositionDto>().ReverseMap();
             CreateMap<ProcessRoute, ProcessRouteDto>().ReverseMap();
+            CreateMap<CreateOrUpdateProcessRouteDto, ProcessRoute>().ReverseMap();
         }
     }
 }

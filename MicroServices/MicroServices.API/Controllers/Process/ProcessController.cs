@@ -78,7 +78,7 @@ namespace MicroServices.API.Controllers
         }
 
         /// <summary>
-        /// 获取工序路线
+        /// 获取工艺路线
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -87,6 +87,25 @@ namespace MicroServices.API.Controllers
             try
             {
                 return await processRouteService.GetProcessRouteAsync();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 新增工艺路线
+        /// </summary>
+        /// <param name="createOrUpdateProcessRouteDto"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<ApiResult<List<ProcessRouteDto>>> CreateProcessRouteAsync(CreateOrUpdateProcessRouteDto createOrUpdateProcessRouteDto)
+        {
+            try
+            {
+                return await processRouteService.CreateProcessRouteAsync(createOrUpdateProcessRouteDto);
             }
             catch (Exception)
             {

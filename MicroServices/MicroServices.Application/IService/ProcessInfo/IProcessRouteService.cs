@@ -11,5 +11,6 @@ namespace MicroServices.Application.IService.ProcessInfo
     public interface IProcessRouteService
     {
         Task<ApiResult<List<ProcessRouteDto>>> GetProcessRouteAsync();
+        Task<ApiResult<List<ProcessRouteDto>>> CreateProcessRouteAsync(CreateOrUpdateProcessRouteDto createOrUpdateProcessRouteDto);
     }
 }

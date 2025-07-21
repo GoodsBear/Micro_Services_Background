@@ -129,7 +129,57 @@
         "tags": [
           "Process"
         ],
-        "summary": "获取工序路线",
+        "summary": "获取工艺路线",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessRouteDtoListApiResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessRouteDtoListApiResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProcessRouteDtoListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Process/CreateProcessRoute": {
+      "post": {
+        "tags": [
+          "Process"
+        ],
+        "summary": "新增工艺路线",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateProcessRouteDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateProcessRouteDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateProcessRouteDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success",
@@ -564,6 +614,33 @@
             "nullable": true
           },
           "colors": {
+            "type": "string",
+            "nullable": true
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateOrUpdateProcessRouteDto": {
+        "type": "object",
+        "properties": {
+          "processRouteCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "processRouteName": {
+            "type": "string",
+            "nullable": true
+          },
+          "states": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "explain": {
             "type": "string",
             "nullable": true
           },

@@ -24,8 +24,15 @@
         </member>
         <member name="M:MicroServices.API.Controllers.ProcessController.GetProcessRouteAsync">
             <summary>
-            获取工序路线
+            获取工艺路线
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProcessController.CreateProcessRouteAsync(MicroServices.Models.Dtos.CreateOrUpdateProcessRouteDto)">
+            <summary>
+            新增工艺路线
+            </summary>
+            <param name="createOrUpdateProcessRouteDto"></param>
             <returns></returns>
         </member>
         <member name="M:MicroServices.API.Controllers.RBAC.RoleController.GetAllRolesAsync(MicroServices.Models.Dtos.RBACDtos.SearchRoleDto)">
