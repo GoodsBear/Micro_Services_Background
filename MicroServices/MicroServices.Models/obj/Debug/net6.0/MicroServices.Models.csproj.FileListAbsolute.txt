@@ -34,3 +34,21 @@ C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Models\o
 C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\refint\MicroServices.Models.dll
 C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.pdb
 C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\ref\MicroServices.Models.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\bin\Debug\net6.0\MicroServices.Models.deps.json
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\bin\Debug\net6.0\MicroServices.Models.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\bin\Debug\net6.0\MicroServices.Models.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\bin\Debug\net6.0\MicroServices.Domain.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\bin\Debug\net6.0\MicroServices.Shared.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\bin\Debug\net6.0\MicroServices.Domain.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\bin\Debug\net6.0\MicroServices.Shared.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.csproj.AssemblyReference.cache
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.AssemblyInfoInputs.cache
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.AssemblyInfo.cs
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.csproj.CoreCompileInputs.cache
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.sourcelink.json
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroSer.21F4EDE0.Up2Date
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\refint\MicroServices.Models.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\MicroServices.Models.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Models\obj\Debug\net6.0\ref\MicroServices.Models.dll

@@ -70,3 +70,27 @@ C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Applicat
 C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\refint\MicroServices.Application.dll
 C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.pdb
 C:\Users\shunzi\Desktop\Services-Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\ref\MicroServices.Application.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Application.deps.json
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Application.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Application.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Domain.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Infrastructure.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Models.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Repository.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Shared.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Domain.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Infrastructure.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Models.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Repository.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\bin\Debug\net6.0\MicroServices.Shared.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.csproj.AssemblyReference.cache
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.AssemblyInfoInputs.cache
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.AssemblyInfo.cs
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.csproj.CoreCompileInputs.cache
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.sourcelink.json
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroSer.528BE876.Up2Date
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\refint\MicroServices.Application.dll
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\MicroServices.Application.pdb
+D:\GitHub Project\PracticeNew\Micro_Services_Background\MicroServices\MicroServices.Application\obj\Debug\net6.0\ref\MicroServices.Application.dll

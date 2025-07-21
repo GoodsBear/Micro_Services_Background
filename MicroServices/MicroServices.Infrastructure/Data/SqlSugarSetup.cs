@@ -1,6 +1,7 @@
 ﻿// MicroServices.Infrastructure/Data/SqlSugarSetup.cs
 using Dm.util;
 using MicroServices.Domain.InStorage;
+using MicroServices.Domain.Product_Plan;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared; // 确保 AuditableEntity 在这里
 using SqlSugar;

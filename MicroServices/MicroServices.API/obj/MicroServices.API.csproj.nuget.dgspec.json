@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj": {}
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj": {
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj",
+        "projectUniqueName": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj",
         "projectName": "MicroServices.API",
-        "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj",
-        "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.API\\obj\\",
+        "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.API\\MicroServices.API.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\学习软件\\专业\\共享组件、工具和SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,21 +26,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
               }
             }
           }
@@ -91,26 +88,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj": {
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj",
+        "projectUniqueName": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj",
         "projectName": "MicroServices.Application",
-        "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj",
-        "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Application\\obj\\",
+        "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Application\\MicroServices.Application.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\学习软件\\专业\\共享组件、工具和SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -119,27 +114,26 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
               }
             }
           }
@@ -181,26 +175,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj",
+        "projectUniqueName": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj",
         "projectName": "MicroServices.Domain",
-        "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj",
-        "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\obj\\",
+        "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\学习软件\\专业\\共享组件、工具和SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -209,15 +201,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
               }
             }
           }
@@ -259,26 +250,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj": {
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj",
+        "projectUniqueName": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj",
         "projectName": "MicroServices.Infrastructure",
-        "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Infrastructure\\obj\\",
+        "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\学习软件\\专业\\共享组件、工具和SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -287,24 +276,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
               }
             }
           }
@@ -354,26 +342,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
+        "projectUniqueName": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
         "projectName": "MicroServices.Models",
-        "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
-        "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\obj\\",
+        "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\学习软件\\专业\\共享组件、工具和SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -382,18 +368,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\MicroServices.Domain.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
               }
             }
           }
@@ -435,26 +420,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj": {
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj",
+        "projectUniqueName": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj",
         "projectName": "MicroServices.Repository",
-        "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj",
-        "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Repository\\obj\\",
+        "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\MicroServices.Repository.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\学习软件\\专业\\共享组件、工具和SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -463,18 +446,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Models\\MicroServices.Models.csproj"
               },
-              "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
-                "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
+              "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+                "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj"
               }
             }
           }
@@ -520,26 +502,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
+    "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj",
+        "projectUniqueName": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj",
         "projectName": "MicroServices.Shared",
-        "projectPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj",
-        "packagesPath": "C:\\Users\\shunzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shunzi\\Desktop\\Services-Background\\MicroServices\\MicroServices.Shared\\obj\\",
+        "projectPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\MicroServices.Shared.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub Project\\PracticeNew\\Micro_Services_Background\\MicroServices\\MicroServices.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\工作\\DevExpressComponents_21\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\学习软件\\专业\\共享组件、工具和SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shunzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -548,7 +528,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\工作\\DevExpressComponents_21\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -594,7 +573,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
