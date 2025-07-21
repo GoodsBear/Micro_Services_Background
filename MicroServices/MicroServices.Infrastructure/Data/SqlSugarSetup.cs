@@ -29,6 +29,19 @@ namespace MricoServices.Infrastructure.Data
             db.CodeFirst.InitTables(typeof(Menu)); // 初始化 Menu 实体对应的数据库表
             db.CodeFirst.InitTables(typeof(RoleMenu)); // 初始化 RoleMenu 实体对应的数据库表
 
+
+            			#region 仓库相关表的数据初始化
+
+			db.CodeFirst.InitTables(typeof(ProductStorage)); // 初始化 产品入库表 实体对应的数据库表
+            db.CodeFirst.InitTables(typeof(PurchaseStorage)); // 初始化 采购入库单 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(PurchaseInventoryMaterial)); // 初始化 入库物料单 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(PurchaseTest)); // 初始化 采购检验单 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(ReceiveOrReturn)); // 初始化 退料单编号 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(WareHouse)); // 初始化 仓库 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(WareHouseArea)); // 初始化 库区信息表 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(WareHouseLocation)); // 初始化 库位信息表 实体对应的数据库表
+			#endregion
+
             // 2. 配置全局查询过滤器 (实现软删除的核心)
             // 使用 db.QueryFilter.Add 方法
             db.QueryFilter.AddTableFilter<AuditableEntity>(it => it.IsDeleted == false);
