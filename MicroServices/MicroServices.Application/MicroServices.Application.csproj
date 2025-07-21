@@ -18,8 +18,4 @@
 		<ProjectReference Include="..\MicroServices.Shared\MicroServices.Shared.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Services\Product_Plan_Service\" />
-	</ItemGroup>
-
 </Project>

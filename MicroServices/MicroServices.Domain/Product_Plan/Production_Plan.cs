@@ -10,7 +10,6 @@ namespace MicroServices.Domain.Product_Plan
 {
     /// <summary>
     /// 生产计划表 
-    /// 
     /// </summary>
     [SugarTable("Production_Planning", TableDescription = "生产计划表")]
     public class Production_Planning : AuditableEntity
@@ -50,6 +49,11 @@ namespace MicroServices.Domain.Product_Plan
         /// </summary>
         [SugarColumn(ColumnName = "Name_Finished_Product_Id", IsNullable = false)]
         public int Name_Finished_Product_Id { get; set; }
+        /// <summary>
+        /// 成品名称（物料）
+        /// </summary>
+        [SugarColumn(ColumnName = "Name_Finished_Product_Name", IsNullable = false)]
+        public string Name_Finished_Product_Name { get; set; } 
 
         /// <summary>
         /// 成品编号（物料）
