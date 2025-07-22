@@ -17,13 +17,13 @@ namespace MicroServices.Domain.Qualify
         /// <summary>
         /// 缺陷编码
         /// </summary>
-        [SugarColumn(ColumnDescription = "缺陷编码")]
+        [SugarColumn(ColumnDescription = "缺陷编码", IsNullable = true)]
         public string? CommonDefectsCode { get; set; }
         /// <summary>
         /// 缺陷名称
         /// </summary>
 
-        [SugarColumn(ColumnDescription = "缺陷名称")]
+        [SugarColumn(ColumnDescription = "缺陷名称", IsNullable = true)]
         public string? CommonDefectsName { get; set; }
         /// <summary>
         /// 缺陷类型id
@@ -53,13 +53,13 @@ namespace MicroServices.Domain.Qualify
         /// 缺陷描述
         /// </summary>
 
-        [SugarColumn(ColumnDescription = "缺陷描述")]
+        [SugarColumn(ColumnDescription = "缺陷描述", IsNullable = true)]
         public string? DefectDesc { get; set; }
         /// <summary>
         /// 备注
         /// </summary>
 
-        [SugarColumn(ColumnDescription = "备注")]
+        [SugarColumn(ColumnDescription = "备注", IsNullable = true)]
         public string? Remark { get; set; }
     }
 }

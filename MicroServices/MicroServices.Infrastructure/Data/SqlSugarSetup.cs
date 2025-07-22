@@ -5,11 +5,13 @@ using MicroServices.Domain.FacatoryFloors;
 using MicroServices.Domain.Materials;
 using MicroServices.Domain.Qualify;
 using MicroServices.Domain.Reportworks;
+using MicroServices.Domain.Sites;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared; // 确保 AuditableEntity 在这里
 using SqlSugar;
 using System;
 using System.Reflection;
+using System.Security.Policy;
 
 namespace MricoServices.Infrastructure.Data
 {
@@ -36,32 +38,31 @@ namespace MricoServices.Infrastructure.Data
                 typeof(RolePermission),
                 typeof(Menu),
                 typeof(RoleMenu),
-                typeof(Equipment),
-                typeof(EquipmentType),
-                typeof(FactoryFloor),
-                typeof(Team),
-                typeof(TeamType),
-                typeof(TeamUser),
-                //物料、产品
-                typeof(Material),
-                typeof(Unite),
-                typeof(TypeInfos),
-                typeof(Category),
-                typeof(PropertyInfos),
-                typeof(Product),
-                //缺陷
-                typeof(CommonDefects),
-                typeof(DefectionType),
-                typeof(DefectLevel),
-                typeof(DefectLocation),
-                //报工质检
-                typeof(ReportworkQualityInspection),
-                typeof(InspectionType),
-                typeof(InspectionItem),
-                typeof(InspectionItemType),
-                typeof(InspectionResult),
-                typeof(ReportworkRecord)
-
+                typeof(Equipment),//设备表
+                typeof(EquipmentType),//设备类型表
+                typeof(FactoryFloor),//车间表
+                typeof(Team),//班组表
+                typeof(TeamType),//班组类型
+                typeof(TeamUser),//班组成员
+                typeof(Material),//物料
+                typeof(Unite),//单位
+                typeof(TypeInfos),//类型
+                typeof(Category),//分类
+                typeof(PropertyInfos),//属性
+                typeof(Product),//产品
+                typeof(CommonDefects),//常见缺陷表
+                typeof(DefectionType),//缺陷类型表
+                typeof(DefectLevel),//缺陷等级表
+                typeof(DefectLocation),//缺陷位置表
+                typeof(ReportworkQualityInspection),//报工质检
+                typeof(InspectionType),//报工质检类型表
+                typeof(InspectionItem),//检验项目表
+                typeof(InspectionItemType),//检测项目类型表
+                typeof(InspectionResult),//检验结果表
+                typeof(ReportworkRecord),//报工记录表
+                typeof(Sites),//站点表
+                typeof(SiteEquipment),//站点设备表
+                typeof(SiteTools)//站点工具表
             );
 
             // 2. 配置全局查询过滤器 (实现软删除的核心)

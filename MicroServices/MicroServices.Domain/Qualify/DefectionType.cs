@@ -17,13 +17,13 @@ namespace MicroServices.Domain.Qualify
         /// <summary>
         /// 缺陷类型编码
         /// </summary>
-        [SugarColumn(ColumnDescription = "缺陷类型编码")]
+        [SugarColumn(ColumnDescription = "缺陷类型编码", IsNullable = true)]
         public string? TypeCode { get; set; }
         /// <summary>
         /// 缺陷类型名称
         /// </summary>
 
-        [SugarColumn(ColumnDescription = "缺陷类型名称")]
+        [SugarColumn(ColumnDescription = "缺陷类型名称", IsNullable = true)]
         public string? TypeName { get; set; }
         /// <summary>
         /// 状态
@@ -34,7 +34,7 @@ namespace MicroServices.Domain.Qualify
         /// <summary>
         /// 备注
         /// </summary>
-        [SugarColumn(ColumnDescription = "备注")]
+        [SugarColumn(ColumnDescription = "备注", IsNullable = true)]
         public string? Remark { get; set; }
     }
 }

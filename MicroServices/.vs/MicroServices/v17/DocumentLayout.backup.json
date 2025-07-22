@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\ERP\\Micro_Services_Background\\MicroServices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F08FC5DF-984C-452E-B1B1-204662BAC058}|MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj|d:\\erp\\micro_services_background\\microservices\\microservices.infrastructure\\data\\sqlsugarsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F08FC5DF-984C-452E-B1B1-204662BAC058}|MicroServices.Infrastructure\\MicroServices.Infrastructure.csproj|solutionrelative:microservices.infrastructure\\data\\sqlsugarsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|d:\\erp\\micro_services_background\\microservices\\microservices.domain\\reportworks\\reportworkrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|solutionrelative:microservices.domain\\reportworks\\reportworkrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|d:\\erp\\micro_services_background\\microservices\\microservices.domain\\reportworks\\reportworkqualityinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|solutionrelative:microservices.domain\\reportworks\\reportworkqualityinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|d:\\erp\\micro_services_background\\microservices\\microservices.domain\\reportworks\\reportworkrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C5FCE5A-CA2A-47CF-B4E7-FFCCD8F05B5B}|MicroServices.Domain\\MicroServices.Domain.csproj|solutionrelative:microservices.domain\\reportworks\\reportworkrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SqlSugarSetup.cs",
-              "DocumentMoniker": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
-              "RelativeDocumentMoniker": "MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
-              "ToolTip": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
-              "RelativeToolTip": "MicroServices.Infrastructure\\Data\\SqlSugarSetup.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswDwAAAArAAAAAAAAAA==",
+              "Title": "ReportworkRecord.cs",
+              "DocumentMoniker": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
+              "RelativeDocumentMoniker": "MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
+              "ToolTip": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
+              "RelativeToolTip": "MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwC8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T11:09:09.35Z",
+              "WhenOpened": "2025-07-21T13:26:20.22Z",
               "EditorCaption": ""
             },
             {
@@ -53,23 +49,9 @@
               "RelativeDocumentMoniker": "MicroServices.Domain\\Reportworks\\ReportworkQualityInspection.cs",
               "ToolTip": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Reportworks\\ReportworkQualityInspection.cs",
               "RelativeToolTip": "MicroServices.Domain\\Reportworks\\ReportworkQualityInspection.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAHsAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T10:43:10.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReportworkRecord.cs",
-              "DocumentMoniker": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
-              "RelativeDocumentMoniker": "MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
-              "ToolTip": "D:\\ERP\\Micro_Services_Background\\MicroServices\\MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
-              "RelativeToolTip": "MicroServices.Domain\\Reportworks\\ReportworkRecord.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T08:34:25.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T13:26:17.56Z"
             }
           ]
         },

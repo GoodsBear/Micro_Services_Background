@@ -11,7 +11,8 @@ namespace MicroServices.Domain.Sites
     /// <summary>
     /// 站点表
     /// </summary>
-    public class Site : AuditableEntity
+    [SugarTable("Sites", TableDescription = "站点表")]
+    public class Sites : AuditableEntity
     {
         [SugarColumn(ColumnDescription = "站点编号")]
         public string SiteCode { get; set; }

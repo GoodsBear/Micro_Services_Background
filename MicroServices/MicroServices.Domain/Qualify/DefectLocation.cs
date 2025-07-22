@@ -17,12 +17,12 @@ namespace MicroServices.Domain.Qualify
         /// <summary>
         /// 缺陷位置编码
         /// </summary>
-        [SugarColumn(ColumnDescription = "缺陷位置编码")]
+        [SugarColumn(ColumnDescription = "缺陷位置编码", IsNullable = true)]
         public string? LoactionCode { get; set; }
         /// <summary>
         /// 缺陷位置名称
         /// </summary>
-        [SugarColumn(ColumnDescription = "缺陷位置名称")]
+        [SugarColumn(ColumnDescription = "缺陷位置名称", IsNullable = true)]
         public string? LocationName { get; set; }
         /// <summary>
         /// 状态
@@ -32,7 +32,7 @@ namespace MicroServices.Domain.Qualify
         /// <summary>
         /// 备注
         /// </summary>
-        [SugarColumn(ColumnDescription = "备注")]
+        [SugarColumn(ColumnDescription = "备注", IsNullable = true)]
         public string? Remark { get; set; }
     }
 }

@@ -11,13 +11,14 @@ namespace MicroServices.Domain.Sites
     /// <summary>
     /// 站点工具表
     /// </summary>
+    [SugarTable("SiteTools", TableDescription = "站点工具表")]
     public class SiteTools : AuditableEntity
     {
         [SugarColumn(ColumnDescription = "工装夹具编号")]
         public string ToolsCode { get; set; }
 
         [SugarColumn(ColumnDescription = "站点外键id")]
-        public long SitesId { get; set; }
+        public int SitesId { get; set; }
 
         [SugarColumn(ColumnDescription = "工装夹具名称")]
         public string ToolsName { get; set; }
@@ -29,6 +30,6 @@ namespace MicroServices.Domain.Sites
         public int Count { get; set; }
 
         [SugarColumn(ColumnDescription = "工装夹具类型id")]
-        public long ToolsTypeId { get; set; }
+        public int ToolsTypeId { get; set; }
     }
 }

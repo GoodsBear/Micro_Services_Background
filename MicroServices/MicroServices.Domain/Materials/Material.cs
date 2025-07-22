@@ -59,37 +59,37 @@ namespace MicroServices.Domain.Materials
         /// <summary>
         /// 有效开始日期
         /// </summary>
-        [SugarColumn(ColumnName = "ValidFrom")]
+        [SugarColumn(ColumnName = "ValidFrom", IsNullable = true)]
         public DateTime? ValidFrom { get; set; }
 
         /// <summary>
         /// 有效结束日期
         /// </summary>
-        [SugarColumn(ColumnName = "ValidTo")]
+        [SugarColumn(ColumnName = "ValidTo", IsNullable = true)]
         public DateTime? ValidTo { get; set; }
 
         /// <summary>
         /// 预警天数
         /// </summary>
-        [SugarColumn(ColumnName = "WarningDays")]
+        [SugarColumn(ColumnName = "WarningDays", IsNullable = true)]
         public int? WarningDays { get; set; }
 
         /// <summary>
         /// 库存上限
         /// </summary>
-        [SugarColumn(ColumnName = "InventoryUpperLimit")]
+        [SugarColumn(ColumnName = "InventoryUpperLimit", IsNullable = true)]
         public decimal? InventoryUpperLimit { get; set; }
 
         /// <summary>
         /// 库存下限
         /// </summary>
-        [SugarColumn(ColumnName = "InventoryLowerLimit")]
+        [SugarColumn(ColumnName = "InventoryLowerLimit", IsNullable = true)]
         public decimal? InventoryLowerLimit { get; set; }
 
         /// <summary>
         /// 采购价格
         /// </summary>
-        [SugarColumn(ColumnName = "PurchasePrice")]
+        [SugarColumn(ColumnName = "PurchasePrice", IsNullable = true)]
         public decimal? PurchasePrice { get; set; }
 
         /// <summary>
