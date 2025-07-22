@@ -1,6 +1,7 @@
 ﻿// MicroServices.Infrastructure/Data/SqlSugarSetup.cs
 using Dm.util;
 using MicroServices.Domain.Product_Plan;
+using MicroServices.Domain.ProductPlan;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared; // 确保 AuditableEntity 在这里
 using SqlSugar;
@@ -31,7 +32,7 @@ namespace MricoServices.Infrastructure.Data
                 typeof(RolePermission),
                 typeof(Menu),
                 typeof(RoleMenu),
-                typeof(Production_Planning), //生产计划表
+                typeof(ProductPlan), //生产计划表
                 typeof(Work_Order), //生产工单表
                 typeof(Work_Order_Tasks) // 工单任务表
             );

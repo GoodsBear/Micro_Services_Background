@@ -14,13 +14,6 @@ namespace MicroServices.Domain.Product_Plan
     [SugarTable("Work_Order", TableDescription = "生产工单表")]
     public class Work_Order : AuditableEntity
     {
-
-        /// <summary>
-        /// 计划Id
-        /// </summary>
-        [SugarColumn(ColumnName = "Planning_Id")]
-        public int? Planning_Id { get; set; } // INTEGER类型，如果可为NULL，使用int?
-
         /// <summary>
         /// 工单编号
         /// </summary>
@@ -32,6 +25,12 @@ namespace MicroServices.Domain.Product_Plan
         /// </summary>
         [SugarColumn(ColumnName = "Order_Name")]
         public string Order_Name { get; set; }
+
+        /// <summary>
+        /// 计划Id
+        /// </summary>
+        [SugarColumn(ColumnName = "Planning_Id")]
+        public int? Planning_Id { get; set; } // INTEGER类型，如果可为NULL，使用int?
 
         /// <summary>
         /// 工单进度
