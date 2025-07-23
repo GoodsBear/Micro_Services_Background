@@ -36,7 +36,7 @@ namespace MricoServices.Repository.IRepository
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        Task<bool> UpdateAsync(T entity);
+        Task<int> UpdateAsync(T entity);
         /// <summary>
         /// 真删除
         /// </summary>
@@ -49,7 +49,7 @@ namespace MricoServices.Repository.IRepository
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        Task<bool> SoftDeleteAsync(T entity);
+        Task<int> SoftDeleteAsync(int id);
 
 
 

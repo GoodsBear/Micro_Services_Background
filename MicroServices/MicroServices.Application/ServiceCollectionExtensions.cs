@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MicroServices.Application.IService.Houses;
+using MicroServices.Application.Services.House;
+using Microsoft.Extensions.DependencyInjection;
 using MricoServices.Application.IService.RBAC;
 using MricoServices.Application.MapperProFiles;
 using MricoServices.Application.Services.RBAC;
@@ -19,11 +21,12 @@ namespace MicroServices.Application
 
             // 注册应用层服务
             services.AddScoped<IUserService, UserService>();
-            // services.AddScoped<IRoleService, RoleService>();
-            // services.AddScoped<IMenuService, MenuService>();
-            // services.AddScoped<IPermissionService, PermissionService>();
-
-            return services;
+            services.AddScoped<IRoleService, RoleService>();
+			// services.AddScoped<IMenuService, MenuService>();
+			// services.AddScoped<IPermissionService, PermissionService>();
+			services.AddScoped<IWareHouseService, WareHouseService>();
+			services.AddScoped<IHouseAreaService, HouseAreaService>();
+			return services;
         }
     }
 }

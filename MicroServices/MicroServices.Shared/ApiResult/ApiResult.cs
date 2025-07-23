@@ -27,7 +27,7 @@ namespace MricoServices.Shared.ApiResult
         }
         public static ApiResult Fail(ResultCode code, string reason)
         {
-            return new ApiResult(true, code, reason);
+            return new ApiResult(false, code, reason);
         }
     }
     public class ApiResult<T> : ApiResult
@@ -45,7 +45,7 @@ namespace MricoServices.Shared.ApiResult
         }
         public static ApiResult<T> Fail(ResultCode code, string reason)
         {
-            return new ApiResult<T>(true, code, reason, default!);
+            return new ApiResult<T>(false, code, reason, default!);
         }
     }
 
