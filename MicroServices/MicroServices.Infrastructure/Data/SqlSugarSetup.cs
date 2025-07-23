@@ -1,5 +1,6 @@
 ﻿// MicroServices.Infrastructure/Data/SqlSugarSetup.cs
 using Dm.util;
+using MicroServices.Domain.InStorage;
 using MicroServices.Domain.Product_Plan;
 using MicroServices.Domain.ProductPlan;
 using MricoServices.Domain.RBAC;
@@ -48,6 +49,7 @@ namespace MricoServices.Infrastructure.Data
 			db.CodeFirst.InitTables(typeof(WareHouse)); // 初始化 仓库 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(WareHouseArea)); // 初始化 库区信息表 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(WareHouseLocation)); // 初始化 库位信息表 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(Inventory)); // 初始化 库存表 实体对应的数据库表
 			#endregion
 
             // 2. 配置全局查询过滤器 (实现软删除的核心)

@@ -32,7 +32,7 @@ namespace MicroServices.Domain.InStorage
         /// 工单名称
         /// </summary>
         [SugarColumn(ColumnName = "WorkOrderName", ColumnDescription = "工单名称")]
-        public string WorkOrderName { get; set; }
+        public int WorkOrderId { get; set; }
 		/// <summary>
         /// 任务名称
         /// </summary>

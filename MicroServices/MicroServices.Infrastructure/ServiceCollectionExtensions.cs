@@ -43,6 +43,7 @@ namespace MicroServices.Infrastructure
             services.AddScoped<IMenuRepository, MenuRepository>();
             services.AddScoped<IWareHouseRepository, WareHouseRepository>();
             services.AddScoped<IHouseAreaRepository, HouseAreaRepository>();
+            services.AddScoped<IHouseLocationRepository, HouseLocationRepository>();
 
             return services;
         }

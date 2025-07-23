@@ -7,7 +7,7 @@ using MricoServices.Shared.ApiResult;
 namespace MicroServices.API.Controllers.House
 {
 	/// <summary>
-	/// 库区控制器
+	/// 库区管理
 	/// </summary>
 	[Route("api/[controller]/[action]")]
 	[ApiController]
@@ -26,7 +26,7 @@ namespace MicroServices.API.Controllers.House
         /// <param name="houseAreaDto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<ApiResult<WareHouseAreaDto>> AddHouseAreaAsync(CreateUpdateWareHouseAreaDto houseAreaDto)
+        public async Task<ApiResult> AddHouseAreaAsync(CreateUpdateWareHouseAreaDto houseAreaDto)
         {
             return await _houseAreaService.AddHouseAreaAsync(houseAreaDto);
         }

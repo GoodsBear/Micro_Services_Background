@@ -6,6 +6,9 @@ using MricoServices.Shared.ApiResult;
 
 namespace MicroServices.API.Controllers.House
 {
+	/// <summary>
+	/// 仓库管理
+	/// </summary>
 	[Route("api/[controller]/[action]")]
 	[ApiController]
 	public class WareHouseController : ControllerBase
@@ -23,7 +26,7 @@ namespace MicroServices.API.Controllers.House
 		/// <param name="wareHouseDto"></param>
 		/// <returns></returns>
         [HttpPost]
-        public async Task<ApiResult<WareHouseDto>> AddWareHouseAsync(CreateUpdateWareHouseDto wareHouseDto)
+        public async Task<ApiResult> AddWareHouseAsync(CreateUpdateWareHouseDto wareHouseDto)
         {
             return await _wareHouseService.AddWareHouseAsync(wareHouseDto);
         }

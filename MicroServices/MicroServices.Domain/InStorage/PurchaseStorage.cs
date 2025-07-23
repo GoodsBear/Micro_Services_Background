@@ -30,14 +30,14 @@ public class PurchaseStorage : AuditableEntity
     /// <summary>
     /// 供应商（外键）
     /// </summary>
-    [SugarColumn(ColumnName = "Supplier", ColumnDescription = "供应商")]
-    public int Supplier { get; set; }
+    [SugarColumn(ColumnName = "SupplierId", ColumnDescription = "供应商")]
+    public int SupplierId { get; set; }
 
     /// <summary>
     /// 采购订单（外键）
     /// </summary>
-    [SugarColumn(ColumnName = "PurchaseOrder", ColumnDescription = "采购订单")]
-    public int PurchaseOrder { get; set; }
+    [SugarColumn(ColumnName = "PurchaseOrderId", ColumnDescription = "采购订单")]
+    public int PurchaseOrderId { get; set; }
 
     /// <summary>
     /// 物料检测结果
@@ -98,8 +98,8 @@ public class PurchaseInventoryMaterial : AuditableEntity
     /// <summary>
     /// 物料编号
     /// </summary>
-    [SugarColumn(ColumnName = "MaterialNum", ColumnDescription = "物料编号")]
-    public int MaterialNum { get; set; }
+    [SugarColumn(ColumnName = "MaterialId", ColumnDescription = "物料编号")]
+    public int MaterialId{ get; set; }
 
     /// <summary>
     /// 条形码
@@ -134,20 +134,20 @@ public class PurchaseInventoryMaterial : AuditableEntity
     /// <summary>
     /// 仓库编号
     /// </summary>
-    [SugarColumn(ColumnName = "WarehouseNum", ColumnDescription = "仓库编号")]
-    public string WarehouseNum { get; set; }
+    [SugarColumn(ColumnName = "WarehouseId", ColumnDescription = "仓库编号")]
+    public int WarehouseId { get; set; }
 
     /// <summary>
     /// 库区编号
     /// </summary>
     [SugarColumn(ColumnName = "MaterialAreaId", ColumnDescription = "库区")]
-    public string MaterialAreaNum { get; set; }
+    public int MaterialAreaId { get; set; }
 
     /// <summary>
     /// 库位编号
     /// </summary>
-    [SugarColumn(ColumnName = "MaterialLocationId", ColumnDescription = "库位编号")]
-    public string MaterialLocationNum { get; set; }
+    [SugarColumn(ColumnName = "HouseLocationId", ColumnDescription = "库位编号")]
+    public int HouseLocationId { get; set; }
 
     /// <summary>
     /// 物料数量
@@ -185,8 +185,8 @@ public class PurchaseTest : AuditableEntity
     /// <summary>
     /// 入库单号（外键）
     /// </summary>
-    [SugarColumn(ColumnName = "InHouseNum", ColumnDescription = "入库单号")]
-    public string InHouseNum { get; set; }
+    [SugarColumn(ColumnName = "InHouseId", ColumnDescription = "入库单号")]
+    public int InHouseId { get; set; }
 
     /// <summary>
     /// 检验时间

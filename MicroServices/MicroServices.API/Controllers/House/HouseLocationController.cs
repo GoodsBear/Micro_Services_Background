@@ -7,7 +7,7 @@ using MricoServices.Shared.ApiResult;
 namespace MicroServices.API.Controllers.House
 {
 	/// <summary>
-	/// 库位控制器
+	/// 库位管理
 	/// </summary>
 	[Route("api/[controller]/[action]")]
 	[ApiController]
@@ -26,7 +26,7 @@ namespace MicroServices.API.Controllers.House
 		/// <param name="houseLocationDto"></param>
 		/// <returns></returns>
         [HttpPost]
-        public async Task<ApiResult<HouseLocationDto>> AddHouseLocationAsync(CreateUpdateHouseLocationDto houseLocationDto)
+        public async Task<ApiResult> AddHouseLocationAsync(CreateUpdateHouseLocationDto houseLocationDto)
         {
             return await _houseLocationService.AddHouseLocationAsync(houseLocationDto);
         }
@@ -65,5 +65,11 @@ namespace MicroServices.API.Controllers.House
             return await _houseLocationService.UpdateHouseLocationAsync(houseLocationId, houseLocationDto);
 		}
 
+		[HttpGet]
+		public string GetNum()
+		{
+			string result= "CKBH" + DateTime.Now.ToString("yyyyMMddHHmmss");
+			return result;
+		}
 	}
 }

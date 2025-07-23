@@ -12,7 +12,7 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 入库单号
 		/// </summary>
-		[SugarColumn(ColumnName = "InHouseNum", IsPrimaryKey = true, ColumnDescription = "入库单号")]
+		[SugarColumn(ColumnName = "InHouseNum", ColumnDescription = "入库单号")]
 		public string InHouseNum { get; set; }
 
 		/// <summary>
@@ -42,8 +42,8 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 产品编号
 		/// </summary>
-		[SugarColumn(ColumnName = "MaterialCode", ColumnDescription = "产品编号")]
-		public string MaterialCode { get; set; }
+		[SugarColumn(ColumnName = "MaterialId", ColumnDescription = "产品编号")]
+		public int MaterialId { get; set; }
 
 		/// <summary>
 		/// 数量
@@ -66,7 +66,7 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 仓库编号
 		/// </summary>
-		[SugarColumn(ColumnName = "WarehouseNum", ColumnDescription = "仓库编号")]
-		public string WarehouseNum { get; set; }
+		[SugarColumn(ColumnName = "WarehouseId", ColumnDescription = "仓库编号")]
+		public int WarehouseId { get; set; }
 	}
 }

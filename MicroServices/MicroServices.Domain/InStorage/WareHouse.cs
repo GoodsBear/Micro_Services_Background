@@ -12,7 +12,7 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 仓库编号
 		/// </summary>
-		[SugarColumn(ColumnName = "WareHouseNum", IsPrimaryKey = true, ColumnDescription = "仓库编号")]
+		[SugarColumn(ColumnName = "WareHouseNum",ColumnDescription = "仓库编号")]
 		public string WareHouseNum { get; set; }
 
 		/// <summary>
@@ -55,7 +55,7 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 库区编号
 		/// </summary>
-		[SugarColumn(ColumnName = "AreaNum", IsPrimaryKey = true, ColumnDescription = "库区编号")]
+		[SugarColumn(ColumnName = "AreaNum",ColumnDescription = "库区编号")]
 		public string AreaNum { get; set; }
 
 		/// <summary>
@@ -73,14 +73,14 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 所属仓库（外键）
 		/// </summary>
-		[SugarColumn(ColumnName = "WareHouseNum", ColumnDescription = "所属仓库")]
-		public string WareHouseNum { get; set; }
+		[SugarColumn(ColumnName = "WareHouseId", ColumnDescription = "所属仓库")]
+		public int WareHouseId { get; set; }
 
 		/// <summary>
 		/// 负责人
 		/// </summary>
 		[SugarColumn(ColumnName = "WareHouseManager", ColumnDescription = "负责人")]
-		public string WareHouseManager { get; set; }
+		public int WareHouseManager { get; set; }
 	}
 
 	/// <summary>
@@ -92,7 +92,7 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 库位编号
 		/// </summary>
-		[SugarColumn(ColumnName = "LocationNum", IsPrimaryKey = true, ColumnDescription = "库位编号")]
+		[SugarColumn(ColumnName = "LocationNum",ColumnDescription = "库位编号")]
 		public string LocationNum { get; set; }
 
 		/// <summary>
@@ -104,8 +104,8 @@ namespace MicroServices.Domain.InStorage
 		/// <summary>
 		/// 库位所属库区
 		/// </summary>
-		[SugarColumn(ColumnName = "LocationArea", ColumnDescription = "库位所属库区")]
-		public int LocationArea { get; set; }
+		[SugarColumn(ColumnName = "AreaId", ColumnDescription = "库位所属库区")]
+		public int AreaId { get; set; }
 
 		/// <summary>
 		/// 库位最大载重
@@ -129,13 +129,7 @@ namespace MicroServices.Domain.InStorage
 		/// 库位位置Z（字符串类型）
 		/// </summary>
 		[SugarColumn(ColumnName = "LocationAddrZ", ColumnDescription = "库位位置Z")]
-		public string LocationAddrZ { get; set; }
-
-		/// <summary>
-		/// 库所属库区编号
-		/// </summary>
-		[SugarColumn(ColumnName = "AreaNum", ColumnDescription = "库所属库区编号")]
-		public int AreaNum { get; set; }
+		public int LocationAddrZ { get; set; }
 
 		/// <summary>
 		/// 库位描述

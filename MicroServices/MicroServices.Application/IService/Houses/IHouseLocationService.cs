@@ -11,7 +11,7 @@ namespace MicroServices.Application.IService.Houses
 	public interface IHouseLocationService
 	{
 		//新增库位
-        Task<ApiResult<HouseLocationDto>> AddHouseLocationAsync(CreateUpdateHouseLocationDto houseLocationDto);
+        Task<ApiResult> AddHouseLocationAsync(CreateUpdateHouseLocationDto houseLocationDto);
 
 		//修改库位
         Task<ApiResult<HouseLocationDto>> UpdateHouseLocationAsync(int HouseLocationId,CreateUpdateHouseLocationDto houseLocationDto);

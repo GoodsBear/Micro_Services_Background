@@ -14,7 +14,7 @@ namespace MicroServices.Application.IService.Houses
 	public interface IHouseAreaService
 	{
 		//新增库区
-        Task<ApiResult<WareHouseAreaDto>> AddHouseAreaAsync(CreateUpdateWareHouseAreaDto houseAreaDto);
+        Task<ApiResult> AddHouseAreaAsync(CreateUpdateWareHouseAreaDto houseAreaDto);
 
 		//获取仓库列表
 		Task<ApiResult<ApiPaging<List<WareHouseAreaDto>>>> GetHouseAreaListAsync(WareHouseAreaSearch houseAreaSearch);

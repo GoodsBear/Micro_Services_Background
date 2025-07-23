@@ -26,7 +26,12 @@ namespace MicroServices.Models.Dtos.House
 		/// <summary>
 		/// 库位所属库区
 		/// </summary>
-		public int LocationArea { get; set; }
+		public int AreaId { get; set; }
+
+		/// <summary>
+		/// 所属库区名称
+		/// </summary>
+		public string AreaName { get; set; }
 
 		/// <summary>
 		/// 库位最大载重
@@ -46,12 +51,7 @@ namespace MicroServices.Models.Dtos.House
 		/// <summary>
 		/// 库位位置Z（字符串类型）
 		/// </summary>
-		public string LocationAddrZ { get; set; }
-
-		/// <summary>
-		/// 库所属库区编号
-		/// </summary>
-		public int AreaNum { get; set; }
+		public int LocationAddrZ { get; set; }
 
 		/// <summary>
 		/// 库位描述
@@ -76,7 +76,7 @@ namespace MicroServices.Models.Dtos.House
 		/// <summary>
 		/// 库位所属库区
 		/// </summary>
-		public int LocationArea { get; set; }
+		public int AreaId { get; set; }
 
 		/// <summary>
 		/// 库位最大载重
@@ -96,17 +96,7 @@ namespace MicroServices.Models.Dtos.House
 		/// <summary>
 		/// 库位位置Z（字符串类型）
 		/// </summary>
-		public string LocationAddrZ { get; set; }
-
-		/// <summary>
-		/// 库所属库区编号
-		/// </summary>
-		public int AreaNum { get; set; }
-
-		/// <summary>
-		/// 库区名称
-		/// </summary>
-        public string AreaName { get; set; }
+		public int LocationAddrZ { get; set; }
 
 		/// <summary>
 		/// 库位描述

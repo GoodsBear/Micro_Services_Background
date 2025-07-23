@@ -26,6 +26,7 @@ namespace MicroServices.Application
 			// services.AddScoped<IPermissionService, PermissionService>();
 			services.AddScoped<IWareHouseService, WareHouseService>();
 			services.AddScoped<IHouseAreaService, HouseAreaService>();
+			services.AddScoped<IHouseLocationService, HouseLocationService>();
 			return services;
         }
     }

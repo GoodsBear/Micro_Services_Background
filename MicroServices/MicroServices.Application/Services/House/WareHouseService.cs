@@ -30,17 +30,21 @@ namespace MicroServices.Application.Services.House
 		/// <param name="wareHouseDto"></param>
 		/// <returns></returns>
 		/// <exception cref="NotImplementedException"></exception>
-		public async Task<ApiResult<WareHouseDto>> AddWareHouseAsync(CreateUpdateWareHouseDto wareHouseDto)
+		public async Task<ApiResult> AddWareHouseAsync(CreateUpdateWareHouseDto wareHouseDto)
 		{
 			try
 			{
-				var house =  _wareHouseRepository.GetAll().Where(x=>x.WareHouseName== wareHouseDto.WareHouseName);
-				if (house != null)
+				var house = await _wareHouseRepository.GetAll().Where(x=>x.WareHouseName== wareHouseDto.WareHouseName).AnyAsync();
+				if (house)
 				{
-                    return ApiResult<WareHouseDto>.Fail(ResultCode.Fail, "该仓库已存在");
+                    return ApiResult.Fail(ResultCode.Fail, "该仓库已存在");
+				}
+				if(wareHouseDto.WareHouseNum == null|| wareHouseDto.WareHouseNum == "string")
+				{
+					wareHouseDto.WareHouseNum="CKBH"+DateTime.Now.ToString("yyyyMMddHHmmssffff");
 				}
                 var result=await _wareHouseRepository.AddAsync(mapper.Map<WareHouse>(wareHouseDto));
-				return result > 0 ? ApiResult<WareHouseDto>.Success(ResultCode.Ok, mapper.Map<WareHouseDto>(result)) : ApiResult<WareHouseDto>.Fail(ResultCode.Fail, "添加仓库失败");
+				return result > 0 ? ApiResult.Success(ResultCode.Ok) : ApiResult.Fail(ResultCode.Fail, "添加仓库失败");
 			}
 			catch (Exception)
 			{
@@ -130,7 +134,9 @@ namespace MicroServices.Application.Services.House
 					return ApiResult<WareHouseDto>.Fail(ResultCode.Fail, "该仓库不存在");
 				}
 				var result=mapper.Map(wareHouseDto, house);
+
 				var isWin=await _wareHouseRepository.UpdateAsync(result);
+
 				return isWin > 0 ? ApiResult<WareHouseDto>.Success(ResultCode.Ok, mapper.Map<WareHouseDto>(result)) : ApiResult<WareHouseDto>.Fail(ResultCode.Fail, "更新仓库失败");
 			}
 			catch (Exception)

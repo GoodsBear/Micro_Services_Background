@@ -30,17 +30,21 @@ namespace MicroServices.Application.Services.House
 		/// <param name="houseLocationDto"></param>
 		/// <returns></returns>
 		/// <exception cref="NotImplementedException"></exception>
-		public async Task<ApiResult<HouseLocationDto>> AddHouseLocationAsync(CreateUpdateHouseLocationDto houseLocationDto)
+		public async Task<ApiResult> AddHouseLocationAsync(CreateUpdateHouseLocationDto houseLocationDto)
 		{
 			try
 			{
-				var houseLocation = _houseLocationRepository.GetAll().Where(d => d.CreatedByUserName == houseLocationDto.LocationName);
-                if (houseLocation != null)
+				var houseLocation =await _houseLocationRepository.GetAll().Where(d => d.CreatedByUserName == houseLocationDto.LocationName).AnyAsync();
+                if (houseLocation)
 				{
-					return ApiResult<HouseLocationDto>.Fail(ResultCode.Fail, "该库位已存在");
+					return ApiResult.Fail(ResultCode.Fail, "该库位已存在");
 				}
-				await _houseLocationRepository.AddAsync(mapper.Map<WareHouseLocation>(houseLocationDto));
-				return ApiResult<HouseLocationDto>.Success(ResultCode.Ok, mapper.Map<HouseLocationDto>(houseLocationDto));
+				if (houseLocationDto.LocationNum == null || houseLocationDto.LocationNum == "string")
+				{
+					houseLocationDto.LocationNum = "KWBH" + DateTime.Now.ToString("yyyyMMddHHmmssffff");
+				}
+				var result= await _houseLocationRepository.AddAsync(mapper.Map<WareHouseLocation>(houseLocationDto));
+				return result > 0 ? ApiResult.Success(ResultCode.Ok) : ApiResult.Fail(ResultCode.Fail, "添加库位失败");
 			}
 			catch (Exception)
 			{

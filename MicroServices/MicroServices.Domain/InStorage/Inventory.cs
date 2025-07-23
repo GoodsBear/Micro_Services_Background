@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MicroServices.Domain.InStorage
 {
 	/// <summary>
-	/// 库存表
+	/// 物料库存表
 	/// </summary>
 	[SqlSugar.SugarTable("Inventory", TableDescription = "库存表")]
 	public class Inventory:AuditableEntity

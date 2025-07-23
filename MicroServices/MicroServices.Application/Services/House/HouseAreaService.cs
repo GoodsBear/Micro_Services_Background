@@ -33,21 +33,21 @@ namespace MicroServices.Application.Services.House
 		/// <param name="houseAreaDto"></param>
 		/// <returns></returns>
 		/// <exception cref="NotImplementedException"></exception>
-		public async Task<ApiResult<WareHouseAreaDto>> AddHouseAreaAsync(CreateUpdateWareHouseAreaDto houseAreaDto)
+		public async Task<ApiResult> AddHouseAreaAsync(CreateUpdateWareHouseAreaDto houseAreaDto)
 		{
 			try
 			{
-				var area = houseAreaRepository.GetAll().Where(d=>d.AreaName==houseAreaDto.AreaName);
-				if (area != null)
+				var area =await houseAreaRepository.GetAll().Where(d=>d.AreaName==houseAreaDto.AreaName).AnyAsync();
+				if (area)
 				{
-					return ApiResult<WareHouseAreaDto>.Fail(ResultCode.Fail, "该库区已存在");
+					return ApiResult.Fail(ResultCode.Fail, "该库区已存在");
 				}
-				if (houseAreaDto.AreaNum == null)
+				if (houseAreaDto.AreaNum == null||houseAreaDto.AreaNum=="string")
 				{
-					houseAreaDto.AreaNum="KQBH"+DateTime.Now.ToString("yyyyMMddHHmmsshhhh");
+					houseAreaDto.AreaNum="KQBH"+DateTime.Now.ToString("yyyyMMddHHmmssffff");
 				}
 				var result=await houseAreaRepository.AddAsync(mapper.Map<WareHouseArea>(houseAreaDto));
-				return result > 0 ? ApiResult<WareHouseAreaDto>.Success(ResultCode.Ok, mapper.Map<WareHouseAreaDto>(result)) : ApiResult<WareHouseAreaDto>.Fail(ResultCode.Fail, "添加库区失败");
+				return result > 0 ? ApiResult.Success(ResultCode.Ok) : ApiResult.Fail(ResultCode.Fail, "添加库区失败");
 			}
 			catch (Exception)
 			{

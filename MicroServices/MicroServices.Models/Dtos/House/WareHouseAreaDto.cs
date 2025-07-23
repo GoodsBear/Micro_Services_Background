@@ -31,7 +31,7 @@ namespace MicroServices.Models.Dtos.House
 		/// <summary>
 		/// 所属仓库（外键）
 		/// </summary>
-		public string WareHouseNum { get; set; }
+		public int WareHouseId { get; set; }
 
 		/// <summary>
 		/// 所属仓库名称
@@ -41,7 +41,7 @@ namespace MicroServices.Models.Dtos.House
 		/// <summary>
 		/// 负责人
 		/// </summary>
-		public string WareHouseManager { get; set; }
+		public int WareHouseManager { get; set; }
 	}
 
 	//库区创建或更新Dto
@@ -65,12 +65,12 @@ namespace MicroServices.Models.Dtos.House
 		/// <summary>
 		/// 所属仓库（外键）
 		/// </summary>
-		public string WareHouseNum { get; set; }
+		public int WareHouseId { get; set; }
 
 		/// <summary>
 		/// 负责人
 		/// </summary>
-		public string WareHouseManager { get; set; }
+		public int WareHouseManager { get; set; }
 	}
 	//库区搜索Dto
     public class WareHouseAreaSearch : PageModel
