@@ -79,26 +79,6 @@
   },
   {
     "ContainingType": "MicroServices.API.Controllers.House.HouseAreaController",
-    "Method": "GetNum",
-    "RelativePath": "api/HouseArea/GetNum",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "MicroServices.API.Controllers.House.HouseAreaController",
     "Method": "UpdateHouseAreaAsync",
     "RelativePath": "api/HouseArea/UpdateHouseArea",
     "HttpMethod": "PUT",

@@ -48,7 +48,7 @@ namespace MicroServices.API.Controllers.House
 		/// <param name="houseLocationSearch"></param>
 		/// <returns></returns>
         [HttpGet]
-		public async Task<ApiResult<ApiPaging<List<HouseLocationDto>>>> GetHouseLocationListAsync(HouseLocationSearch houseLocationSearch)
+		public async Task<ApiResult<ApiPaging<List<HouseLocationDto>>>> GetHouseLocationListAsync([FromQuery]HouseLocationSearch houseLocationSearch)
 		{
 			return await _houseLocationService.GetHouseLocationListAsync(houseLocationSearch);
 		}

@@ -45,7 +45,7 @@ namespace MicroServices.API.Controllers.House
 		/// <param name="wareHouseSearch"></param>
 		/// <returns></returns>
         [HttpGet]
-		public async Task<ApiResult<ApiPaging<List<WareHouseDto>>>> GetWareHouseListAsync(WareHouseSearch wareHouseSearch)
+		public async Task<ApiResult<ApiPaging<List<WareHouseDto>>>> GetWareHouseListAsync([FromQuery]WareHouseSearch wareHouseSearch)
 		{
             return await _wareHouseService.GetWareHouseListAsync(wareHouseSearch);
         }

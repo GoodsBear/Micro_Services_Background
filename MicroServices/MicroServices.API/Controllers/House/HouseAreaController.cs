@@ -48,7 +48,7 @@ namespace MicroServices.API.Controllers.House
         /// <param name="houseAreaSearch"></param>
         /// <returns></returns>
 		[HttpGet]
-        public async Task<ApiResult<ApiPaging<List<WareHouseAreaDto>>>> GetHouseAreaListAsync(WareHouseAreaSearch houseAreaSearch)
+        public async Task<ApiResult<ApiPaging<List<WareHouseAreaDto>>>> GetHouseAreaListAsync([FromQuery]WareHouseAreaSearch houseAreaSearch)
         {
             return await _houseAreaService.GetHouseAreaListAsync(houseAreaSearch);
         }
