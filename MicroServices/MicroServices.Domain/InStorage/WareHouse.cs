@@ -37,7 +37,7 @@ namespace MicroServices.Domain.InStorage
 		/// 仓库负责人
 		/// </summary>
 		[SugarColumn(ColumnName = "WareHouseManager", ColumnDescription = "仓库负责人")]
-		public string WareHouseManager { get; set; }
+		public int WareHouseManager { get; set; }
 
 		/// <summary>
 		/// 备注

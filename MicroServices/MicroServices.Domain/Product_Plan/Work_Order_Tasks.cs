@@ -22,9 +22,9 @@ namespace MicroServices.Domain.Product_Plan
         public int? Work_Order_Id { get; set; } // INTEGER类型，如果可为NULL，使用int?
 
         /// <summary>
-        /// 工单编号 (主键)
+        /// 工单编号 
         /// </summary>
-        [SugarColumn(IsPrimaryKey = true, ColumnName = "Task_Id", IsNullable = false)]
+        [SugarColumn(ColumnName = "Task_Id", IsNullable = false)]
         public string Task_Id { get; set; }
 
         /// <summary>

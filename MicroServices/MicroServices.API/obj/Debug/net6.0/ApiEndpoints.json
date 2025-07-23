@@ -1,5 +1,243 @@
 [
   {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseAreaController",
+    "Method": "AddHouseAreaAsync",
+    "RelativePath": "api/HouseArea/AddHouseArea",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseAreaDto",
+        "Type": "MicroServices.Models.Dtos.House.CreateUpdateWareHouseAreaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MicroServices.Models.Dtos.House.WareHouseAreaDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseAreaController",
+    "Method": "DeleteHouseAreaAsync",
+    "RelativePath": "api/HouseArea/DeleteHouseArea",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseAreaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseAreaController",
+    "Method": "GetHouseAreaListAsync",
+    "RelativePath": "api/HouseArea/GetHouseAreaList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseAreaSearch",
+        "Type": "MicroServices.Models.Dtos.House.WareHouseAreaSearch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MricoServices.Shared.ApiResult.ApiPaging\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.House.WareHouseAreaDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], MicroServices.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseAreaController",
+    "Method": "GetNum",
+    "RelativePath": "api/HouseArea/GetNum",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseAreaController",
+    "Method": "UpdateHouseAreaAsync",
+    "RelativePath": "api/HouseArea/UpdateHouseArea",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseAreaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "houseAreaDto",
+        "Type": "MicroServices.Models.Dtos.House.CreateUpdateWareHouseAreaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MicroServices.Models.Dtos.House.WareHouseAreaDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseLocationController",
+    "Method": "AddHouseLocationAsync",
+    "RelativePath": "api/HouseLocation/AddHouseLocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseLocationDto",
+        "Type": "MicroServices.Models.Dtos.House.CreateUpdateHouseLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MicroServices.Models.Dtos.House.HouseLocationDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseLocationController",
+    "Method": "DeleteHouseLocationAsync",
+    "RelativePath": "api/HouseLocation/DeleteHouseLocation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseLocationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseLocationController",
+    "Method": "GetHouseLocationListAsync",
+    "RelativePath": "api/HouseLocation/GetHouseLocationList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseLocationSearch",
+        "Type": "MicroServices.Models.Dtos.House.HouseLocationSearch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MricoServices.Shared.ApiResult.ApiPaging\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.House.HouseLocationDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], MicroServices.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.HouseLocationController",
+    "Method": "UpdateHouseLocationAsync",
+    "RelativePath": "api/HouseLocation/UpdateHouseLocation",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "houseLocationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "houseLocationDto",
+        "Type": "MicroServices.Models.Dtos.House.CreateUpdateHouseLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MicroServices.Models.Dtos.House.HouseLocationDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MicroServices.API.Controllers.RBAC.RoleController",
     "Method": "AddRoleAsync",
     "RelativePath": "api/Role/AddRole",
@@ -166,6 +404,115 @@
     "ReturnTypes": [
       {
         "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MicroServices.Models.Dtos.RBACDtos.UserDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.WareHouseController",
+    "Method": "AddWareHouseAsync",
+    "RelativePath": "api/WareHouse/AddWareHouse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wareHouseDto",
+        "Type": "MicroServices.Models.Dtos.House.CreateUpdateWareHouseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MicroServices.Models.Dtos.House.WareHouseDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.WareHouseController",
+    "Method": "DeleteWareHouseAsync",
+    "RelativePath": "api/WareHouse/DeleteWareHouse",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wareHouseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.WareHouseController",
+    "Method": "GetWareHouseListAsync",
+    "RelativePath": "api/WareHouse/GetWareHouseList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wareHouseSearch",
+        "Type": "MicroServices.Models.Dtos.House.WareHouseSearch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MricoServices.Shared.ApiResult.ApiPaging\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.House.WareHouseDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], MicroServices.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.House.WareHouseController",
+    "Method": "UpdateWareHouseAsync",
+    "RelativePath": "api/WareHouse/UpdateWareHouse",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wareHouseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "wareHouseDto",
+        "Type": "MicroServices.Models.Dtos.House.CreateUpdateWareHouseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MicroServices.Models.Dtos.House.WareHouseDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

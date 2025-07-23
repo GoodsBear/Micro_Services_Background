@@ -38,7 +38,7 @@ namespace MricoServices.Infrastructure.Data
             );
 
 
-            			#region 仓库相关表的数据初始化
+            #region 仓库相关表的数据初始化
 
 			db.CodeFirst.InitTables(typeof(ProductStorage)); // 初始化 产品入库表 实体对应的数据库表
             db.CodeFirst.InitTables(typeof(PurchaseStorage)); // 初始化 采购入库单 实体对应的数据库表
