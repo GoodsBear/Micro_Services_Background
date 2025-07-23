@@ -46,28 +46,27 @@ namespace MricoServices.Repository.Repository
         /// <exception cref="NotImplementedException"></exception>
         public async Task<int> SoftDeleteAsync(int id)
         {
-            // 确保 T 类型实现了 AuditableEntity 接口
             if (!typeof(AuditableEntity).IsAssignableFrom(typeof(T)))
             {
                 throw new InvalidOperationException($"实体 {typeof(T).Name} 未实现 AuditableEntity，无法进行软删除。");
             }
 
-            // 先查询实体
-            var entity = await GetByIdAsync(id);
+            var entity = await Context.Queryable<T>().In(id).FirstAsync();
+
             if (entity == null)
             {
                 return 0;
             }
 
-            // 转换为 AuditableEntity 并设置软删除标记
             if (entity is AuditableEntity auditableEntity)
             {
+                if (auditableEntity.IsDeleted)
+                {
+                    return 1;
+                }
                 auditableEntity.IsDeleted = true;
-
-                // 使用 UpdateAsync 方法，AOP 会自动填充审计字段
                 return await UpdateAsync(entity);
             }
-
             return 0;
         }
 
@@ -77,7 +76,33 @@ namespace MricoServices.Repository.Repository
         /// <returns></returns>
         public ISugarQueryable<T> GetAll()
         {
-            return base.AsQueryable();
+            if (typeof(AuditableEntity).IsAssignableFrom(typeof(T)))
+            {
+                // **这是修复后的关键改动：使用表达式树构建器来安全地访问 IsDeleted**
+                // 1. 获取 T 类型的参数表达式
+                ParameterExpression parameter = Expression.Parameter(typeof(T), "it");
+
+                // 2. 将 T 类型参数转换为 AuditableEntity 类型
+                Expression converted = Expression.Convert(parameter, typeof(AuditableEntity));
+
+                // 3. 访问 AuditableEntity 上的 IsDeleted 属性
+                MemberExpression property = Expression.Property(converted, nameof(AuditableEntity.IsDeleted));
+
+                // 4. 构建 == false 的比较表达式
+                ConstantExpression constant = Expression.Constant(false);
+                BinaryExpression body = Expression.Equal(property, constant);
+
+                // 5. 创建完整的 Lambda 表达式
+                Expression<Func<T, bool>> whereExpression = Expression.Lambda<Func<T, bool>>(body, parameter);
+
+                // 6. 应用到 Queryable
+                return base.Context.Queryable<T>().Where(whereExpression);
+            }
+            else
+            {
+                // 如果 T 不是 AuditableEntity，则不进行软删除过滤
+                return base.Context.Queryable<T>();
+            }
         }
 
         /// <summary>
@@ -87,7 +112,7 @@ namespace MricoServices.Repository.Repository
         /// <returns></returns>
         public async Task<T> GetByIdAsync(int id)
         {
-            return await base.GetByIdAsync(id); 
+            return await base.Context.Queryable<T>().In(id).FirstAsync();
         }
 
         /// <summary>
