@@ -5,6 +5,8 @@ using MicroServices.Application.Services.StorgeService;
 using MicroServices.Repository.IRepository.IInventory;
 using MicroServices.Repository.Repository;
 using MicroServices.Repository.Repository.Inventorys;
+﻿using MicroServices.Application.IService.ProcessInfo;
+using MicroServices.Application.Services.ProcessInfo;
 using Microsoft.Extensions.DependencyInjection;
 using MricoServices.Application.IService.RBAC;
 using MricoServices.Application.MapperProFiles;
@@ -29,6 +31,11 @@ namespace MicroServices.Application
             services.AddScoped<IRoleService, RoleService>();
 			// services.AddScoped<IMenuService, MenuService>();
 			// services.AddScoped<IPermissionService, PermissionService>();
+            // services.AddScoped<IMenuService, MenuService>();
+            // services.AddScoped<IPermissionService, PermissionService>();
+            services.AddScoped<IProcessService, ProcessService>();
+            services.AddScoped<IProcessCompositionService, ProcessCompositionService>();
+            services.AddScoped<IProcessRouteService, ProcessRouteService>();
 
             //注册仓库相关服务
 			services.AddScoped<IWareHouseService, WareHouseService>();

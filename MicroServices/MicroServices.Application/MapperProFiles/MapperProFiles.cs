@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
 using MicroServices.Domain.InStorage;
 using MicroServices.Models.Dtos.House;
+using MicroServices.Domain.ProcessInfo;
+using MicroServices.Models.Dtos;
 using MicroServices.Models.Dtos.RBACDtos;
 using MicroServices.Models.Dtos.StorgeDTOS;
 using MricoServices.Domain.RBAC;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,6 +64,12 @@ namespace MricoServices.Application.MapperProFiles
             CreateMap<CreateUpdateProductInventoryDto, ProductInventory>().ReverseMap();
 
 		#endregion
-		}
-	}
+		
+            CreateMap<Processes, ProcessDto>().ReverseMap();
+            CreateMap<CreateOrUpdateProcessCompositionDto, ProcessComposition>().ReverseMap();
+            CreateMap<ProcessComposition, ProcessCompositionDto>().ReverseMap();
+            CreateMap<ProcessRoute, ProcessRouteDto>().ReverseMap();
+            CreateMap<CreateOrUpdateProcessRouteDto, ProcessRoute>().ReverseMap();
+        }
+    }
 }

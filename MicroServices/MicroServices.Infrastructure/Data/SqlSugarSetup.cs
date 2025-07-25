@@ -3,10 +3,12 @@ using Dm.util;
 using MicroServices.Domain.InStorage;
 using MicroServices.Domain.Product_Plan;
 using MicroServices.Domain.ProductPlan;
+using MicroServices.Domain.ProcessInfo;
 using MricoServices.Domain.RBAC;
 using MricoServices.Shared; // 确保 AuditableEntity 在这里
 using SqlSugar;
 using System;
+using System.Diagnostics;
 
 namespace MricoServices.Infrastructure.Data
 {
@@ -36,6 +38,9 @@ namespace MricoServices.Infrastructure.Data
                 typeof(ProductPlan), //生产计划表
                 typeof(Work_Order), //生产工单表
                 typeof(Work_Order_Tasks) // 工单任务表
+                typeof(Processes),
+                typeof(ProcessComposition),
+                typeof(ProcessRoute)
             );
 
 
