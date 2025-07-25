@@ -44,7 +44,9 @@ namespace MicroServices.Models.Dtos.House
 		public int WareHouseManager { get; set; }
 	}
 
-	//库区创建或更新Dto
+	/// <summary>
+	/// 库区创建或更新Dto
+	/// </summary>
     public class CreateUpdateWareHouseAreaDto
     {
 		/// <summary>

@@ -105,6 +105,61 @@
             <param name="wareHouseDto"></param>
             <returns></returns>
         </member>
+        <member name="T:MicroServices.API.Controllers.ProductStorge.ProductStorgeController">
+            <summary>
+            出入库管理
+            </summary>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProductStorge.ProductStorgeController.AddProductStorge(MicroServices.Application.Services.StorgeService.ProductStorgeDTo)">
+            <summary>
+            创建入库信息
+            </summary>
+            <param name="productStorgeDTo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProductStorge.ProductStorgeController.DeleteProductStorgeAsync(System.Int32)">
+            <summary>
+            删除入库信息
+            </summary>
+            <param name="ProductId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProductStorge.ProductStorgeController.UpdateProductStorgeAsync(System.Int32,MicroServices.Application.Services.StorgeService.ProductStorgeDTo)">
+            <summary>
+            修改入库信息
+            </summary>
+            <param name="ProductId"></param>
+            <param name="productStorgeDTo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProductStorge.ProductStorgeController.GetProductStorgeListAsync(MicroServices.Models.Dtos.StorgeDTOS.ProductStorgeSearch)">
+            <summary>
+            获取入库单信息
+            </summary>
+            <param name="productStorgeSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProductStorge.ProductStorgeController.GetProductStorgeDetailAsync(MicroServices.Models.Dtos.StorgeDTOS.ProductStorgeDetailSearch)">
+            <summary>
+            获取入库明细信息
+            </summary>
+            <param name="productStorgeDetailSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProductStorge.ProductStorgeController.ProductIn(System.Int32)">
+            <summary>
+            产品入库
+            </summary>
+            <param name="ProductId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroServices.API.Controllers.ProductStorge.ProductStorgeController.AddProductInventory(MicroServices.Models.Dtos.StorgeDTOS.ProductInventoryDto)">
+            <summary>
+            新增产品
+            </summary>
+            <param name="productInventoryDto"></param>
+            <returns></returns>
+        </member>
         <member name="M:MicroServices.API.Controllers.RBAC.RoleController.GetAllRolesAsync(MicroServices.Models.Dtos.RBACDtos.SearchRoleDto)">
             <summary>
             获取角色列表

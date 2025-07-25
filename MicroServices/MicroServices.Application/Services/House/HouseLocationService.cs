@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 
 namespace MicroServices.Application.Services.House
 {
+	/// <summary>
+	/// 库位服务实现
+	/// </summary>
 	public class HouseLocationService : IHouseLocationService
 	{
 

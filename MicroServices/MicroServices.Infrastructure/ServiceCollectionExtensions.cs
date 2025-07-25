@@ -1,6 +1,10 @@
 ﻿using MicroServices.Repository.IRepository.I_RBAC_Repository;
 using MicroServices.Repository.IRepository.IHouseRepository;
+using MicroServices.Repository.IRepository.IInStoreRepository;
+using MicroServices.Repository.IRepository.IInventory;
 using MicroServices.Repository.Repository.HouseRepository;
+using MicroServices.Repository.Repository.InStoreRepository;
+using MicroServices.Repository.Repository.Inventorys;
 using MicroServices.Repository.Repository.RBAC_Repository;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,11 +45,19 @@ namespace MicroServices.Infrastructure
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IPermissionRepository, PermissionRepository>();
             services.AddScoped<IMenuRepository, MenuRepository>();
-            services.AddScoped<IWareHouseRepository, WareHouseRepository>();
+
+		#region 仓库相关仓储服务注册
+			//注册仓库仓储服务
+			services.AddScoped<IWareHouseRepository, WareHouseRepository>();
             services.AddScoped<IHouseAreaRepository, HouseAreaRepository>();
             services.AddScoped<IHouseLocationRepository, HouseLocationRepository>();
 
-            return services;
+			//注册出入库仓储服务
+			services.AddScoped<IProductStorgeRepository, ProductStorgeRepository>();
+			services.AddScoped<IProductStorageDetailRepository, ProductStorgeDetailRepository>();
+            services.AddScoped<IProductInventoryRepository, ProductInventoryRepository>();
+		#endregion
+			return services;
         }
     }
 }

@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 
 namespace MicroServices.Application.Services.House
 {
+	/// <summary>
+	/// 仓库服务实现
+	/// </summary>
 	public class WareHouseService : IWareHouseService
 	{
 		private readonly IWareHouseRepository _wareHouseRepository;

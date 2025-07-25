@@ -44,7 +44,9 @@ namespace MicroServices.Models.Dtos.House
 		public string? Remark { get; set; }
 	}
 
-	//仓库创建或更新Dto
+	/// <summary>
+	/// 仓库创建或更新Dto
+	/// </summary>
     public class CreateUpdateWareHouseDto
     {
 		/// <summary>

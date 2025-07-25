@@ -59,7 +59,9 @@ namespace MicroServices.Models.Dtos.House
 		public string Remark { get; set; }
 	}
 
-	//库位创建或更新Dto
+	/// <summary>
+	/// 库位创建或更新Dto
+	/// </summary>
     public class CreateUpdateHouseLocationDto
     {
 
@@ -104,7 +106,9 @@ namespace MicroServices.Models.Dtos.House
 		public string Remark { get; set; }
 	}
 
-	//查询库位Dto
+	/// <summary>
+	/// 查询库位Dto
+	/// </summary>
     public class HouseLocationSearch : PageModel
     {
         public int HouseLocationId { get; set; }

@@ -16,13 +16,26 @@ namespace MicroServices.Application.IService.Houses
 		//新增库区
         Task<ApiResult> AddHouseAreaAsync(CreateUpdateWareHouseAreaDto houseAreaDto);
 
-		//获取仓库列表
+		/// <summary>
+		/// 获取仓库列表
+		/// </summary>
+		/// <param name="houseAreaSearch"></param>
+		/// <returns></returns>
 		Task<ApiResult<ApiPaging<List<WareHouseAreaDto>>>> GetHouseAreaListAsync(WareHouseAreaSearch houseAreaSearch);
 
-		//更新库区
+		/// <summary>
+		/// 更新库区
+		/// </summary>
+		/// <param name="houseAreaId"></param>
+		/// <param name="houseAreaDto"></param>
+		/// <returns></returns>
 		Task<ApiResult<WareHouseAreaDto>> UpdateHouseAreaAsync(int houseAreaId,CreateUpdateWareHouseAreaDto houseAreaDto);
 
-		//删除库区
+		/// <summary>
+		/// 删除库区
+		/// </summary>
+		/// <param name="houseAreaId"></param>
+		/// <returns></returns>
         Task<ApiResult> DeleteHouseAreaAsync(int houseAreaId);
 	}
 }

@@ -39,21 +39,25 @@ namespace MricoServices.Infrastructure.Data
             );
 
 
-            #region 仓库相关表的数据初始化
+    #region 仓库相关表的数据初始化
 
 			db.CodeFirst.InitTables(typeof(ProductStorage)); // 初始化 产品入库表 实体对应的数据库表
-            db.CodeFirst.InitTables(typeof(PurchaseStorage)); // 初始化 采购入库单 实体对应的数据库表
-			db.CodeFirst.InitTables(typeof(PurchaseInventoryMaterial)); // 初始化 入库物料单 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(ProductStorageDetail)); // 初始化 产品入库明细表 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(PurchaseStorage)); // 初始化 物料入库单 实体对应的数据库表
+			db.CodeFirst.InitTables(typeof(PurchaseInventoryMaterial)); // 初始化 物料入库明细 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(PurchaseTest)); // 初始化 采购检验单 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(ReceiveOrReturn)); // 初始化 退料单编号 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(WareHouse)); // 初始化 仓库 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(WareHouseArea)); // 初始化 库区信息表 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(WareHouseLocation)); // 初始化 库位信息表 实体对应的数据库表
 			db.CodeFirst.InitTables(typeof(Inventory)); // 初始化 库存表 实体对应的数据库表
-			#endregion
+			db.CodeFirst.InitTables(typeof(ProductInventory)); // 初始化 产品库存表 实体对应的数据库表
+	#endregion
 
-            // 2. 配置全局查询过滤器 (实现软删除的核心)
-            db.QueryFilter.AddTableFilter<AuditableEntity>(it => it.IsDeleted == false);
+
+
+			// 2. 配置全局查询过滤器 (实现软删除的核心)
+			db.QueryFilter.AddTableFilter<AuditableEntity>(it => it.IsDeleted == false);
 
             // 3. 配置 AOP 拦截 (用于自动填充审计字段)
             db.Aop.DataExecuting = (oldValue, entityInfo) =>

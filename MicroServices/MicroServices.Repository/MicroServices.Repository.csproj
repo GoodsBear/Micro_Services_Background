@@ -18,9 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="IRepository\IInStoreRepository\" />
     <Folder Include="IRepository\IOutStoreRepository\" />
-    <Folder Include="Repository\InStoreRepository\" />
     <Folder Include="Repository\OutStoreRepository\" />
   </ItemGroup>
 

@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace MicroServices.Application.IService.Houses
 {
+	/// <summary>
+	/// 库位服务接口
+	/// </summary>
 	public interface IHouseLocationService
 	{
 		//新增库位

@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace MicroServices.Application.IService.Houses
 {
+	/// <summary>
+	/// 仓库服务
+	/// </summary>
 	public interface IWareHouseService
 	{
         //新增仓库

@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace MicroServices.Repository.IRepository.IHouseRepository
 {
+	/// <summary>
+	/// 仓库仓储接口
+	/// </summary>
 	public interface IWareHouseRepository:IBaseRepository<WareHouse>
 	{
 	}

@@ -6,7 +6,7 @@ namespace MicroServices.Domain.InStorage
 	/// <summary>
 	/// 产品入库单
 	/// </summary>
-	[SugarTable("ProductStorage", TableDescription = "产品入库单表")] // 设置表名和描述
+	[SugarTable("ProductStorage", TableDescription = "产品入库单")] // 设置表名和描述
 	public class ProductStorage:AuditableEntity
 	{
 		/// <summary>
@@ -39,17 +39,32 @@ namespace MicroServices.Domain.InStorage
 		[SugarColumn(ColumnName = "Remark", IsNullable = true, ColumnDescription = "备注")]
 		public string? Remark { get; set; }
 
+
+	}
+
+	/// <summary>
+	/// 产品入库明细表
+	/// </summary>
+	[SugarTable("ProductStorageDetail", TableDescription = "产品入库明细表")]
+	public class ProductStorageDetail:AuditableEntity
+	{
 		/// <summary>
 		/// 产品编号
 		/// </summary>
-		[SugarColumn(ColumnName = "MaterialId", ColumnDescription = "产品编号")]
-		public int MaterialId { get; set; }
+		[SugarColumn(ColumnName = "ProductId", ColumnDescription = "产品编号")]
+		public int ProductId { get; set; }
+
+		/// <summary>
+		/// 所属入库单编号
+		/// </summary>
+        [SugarColumn(ColumnName = "ProductStorgeId", ColumnDescription = "所属入库单编号")]
+        public int ProductStorgeId { get; set; }
 
 		/// <summary>
 		/// 数量
 		/// </summary>
-		[SugarColumn(ColumnName = "MaterialSum", ColumnDescription = "数量")]
-		public int MaterialSum { get; set; }
+		[SugarColumn(ColumnName = "ProductSum", ColumnDescription = "数量")]
+		public int ProductSum { get; set; }
 
 		/// <summary>
 		/// 生产日期
@@ -68,5 +83,6 @@ namespace MicroServices.Domain.InStorage
 		/// </summary>
 		[SugarColumn(ColumnName = "WarehouseId", ColumnDescription = "仓库编号")]
 		public int WarehouseId { get; set; }
+
 	}
 }

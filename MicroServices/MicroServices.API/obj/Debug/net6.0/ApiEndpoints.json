@@ -268,6 +268,223 @@
     ]
   },
   {
+    "ContainingType": "MicroServices.API.Controllers.ProductStorge.ProductStorgeController",
+    "Method": "AddProductInventory",
+    "RelativePath": "api/ProductStorge/AddProductInventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productInventoryDto",
+        "Type": "MicroServices.Models.Dtos.StorgeDTOS.ProductInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProductStorge.ProductStorgeController",
+    "Method": "AddProductStorge",
+    "RelativePath": "api/ProductStorge/AddProductStorge",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productStorgeDTo",
+        "Type": "MicroServices.Application.Services.StorgeService.ProductStorgeDTo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProductStorge.ProductStorgeController",
+    "Method": "DeleteProductStorgeAsync",
+    "RelativePath": "api/ProductStorge/DeleteProductStorge",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProductStorge.ProductStorgeController",
+    "Method": "GetProductStorgeDetailAsync",
+    "RelativePath": "api/ProductStorge/GetProductStorgeDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductStorgeDetailId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MricoServices.Shared.ApiResult.ApiPaging\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.StorgeDTOS.ProductStorgeDetailDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], MicroServices.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProductStorge.ProductStorgeController",
+    "Method": "GetProductStorgeListAsync",
+    "RelativePath": "api/ProductStorge/GetProductStorgeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductStorgeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult\u00601[[MricoServices.Shared.ApiResult.ApiPaging\u00601[[System.Collections.Generic.List\u00601[[MicroServices.Models.Dtos.StorgeDTOS.ProductStorgeDto, MicroServices.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], MicroServices.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProductStorge.ProductStorgeController",
+    "Method": "ProductIn",
+    "RelativePath": "api/ProductStorge/ProductIn",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicroServices.API.Controllers.ProductStorge.ProductStorgeController",
+    "Method": "UpdateProductStorgeAsync",
+    "RelativePath": "api/ProductStorge/UpdateProductStorge",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "productStorgeDTo",
+        "Type": "MicroServices.Application.Services.StorgeService.ProductStorgeDTo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MricoServices.Shared.ApiResult.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MicroServices.API.Controllers.RBAC.RoleController",
     "Method": "AddRoleAsync",
     "RelativePath": "api/Role/AddRole",

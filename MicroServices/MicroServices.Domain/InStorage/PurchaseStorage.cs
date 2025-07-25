@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 namespace MicroServices.Domain.InStorage
 {
 /// <summary>
-/// 采购入库单
+/// 物料入库单
 /// </summary>
-[SugarTable("PurchaseStorage", TableDescription = "采购入库单表")] // 设置表名和描述
+[SugarTable("PurchaseStorage", TableDescription = "物料入库单")] // 设置表名和描述
 public class PurchaseStorage : AuditableEntity
 {
     /// <summary>
@@ -84,9 +84,9 @@ public class PurchaseStorage : AuditableEntity
 
 
 /// <summary>
-/// 入库物料单
+/// 物料入库明细
 /// </summary>
-[SugarTable("PurchaseInventoryMaterial", TableDescription = "入库物料单表")]
+[SugarTable("PurchaseInventoryMaterial", TableDescription = "物料入库明细")]
 public class PurchaseInventoryMaterial : AuditableEntity
 {
     /// <summary>
